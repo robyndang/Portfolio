@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+  <title>Robyn Dang</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/favicon-07.svg"/>
+</head>
+<body>
+
+  <!--!!!!!!!!!! NAVBAR FOR LARGE SCREENS !!!!!!!!!!--->
+      <ul class="navbar">
+        <li><a><img src="img/logo-03.svg"></a></li>
+        <li><a href="index.html" title="Case Studies">work</a></li>
+        <li><a href="Play.html" title="Play">play</a></li>
+        <li><a href="About.html" title="About">about</a></li>
+      </ul>
+
+  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+  <div class="hamburger-container">
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg" alt="hamburger menu button"/></span>
+  </div>
+
+  <div class="menu-container" id="hamburgermenu">
+    <span class="closebtn" onclick="closeMenu()"><img src="img/close.svg" alt="close hamburger menu"></span>
+
+    <div class="menu-column">
+      <div class="menu-item">
+        <p>work</p>
+        <a href="Work.html">
+          <img src="img/hovering-05.svg" alt="hovering over work"/>
+        </a>
+      </div>
+      <div class="menu-item">
+        <p>play</p>
+        <a href="Play.html">
+          <img src="img/hovering-05.svg" alt="hovering over play"/>
+        </a>
+      </div>
+      <div class="menu-item">
+        <p>about</p>
+        <a href="About.html">
+          <img src="img/hovering-05.svg" alt="hovering over about"/>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<div id="butter">
+
+<!--!!!!!!!!!! CONTENT !!!!!!!!!!--->
+  <div class="flex-container">
+
+    <div class="rect-play"></div>
+
+    <div class="flex-fullspan">
+      <h1>play</h1>
+      <p>
+        Sometimes I paint, draw and craft.
+      <p>
+    </div>
+
+    <div class="flex-item">
+      <img src="img/lastblush.jpg" alt="line painting on wood of a broken hearted man.">
+    </div>
+
+    <div class="flex-item">
+      <video muted autoplay loop title="Painting timelapse of a fallen angel breaking a cupid's arrow">
+        <source src="img/anti-romantic.mp4" type="video/mp4">
+        <source src="img/anti-romantic.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="flex-item">
+      <img src="img/vulnerability.jpg" alt="digital painting of a young man in a winter landscape. His arms stand in the wind as crows pull the yarn from his sweater away.">
+    </div>
+
+    <div class="flex-item">
+      <img src="img/queens-gambit.jpg" alt="gouache painting of Beth Harmon from Queen's Gambit">
+    </div>
+
+    <div class="flex-item">
+      <video muted autoplay loop title="digital painting timelapse of Scarborough Bluffs poster">
+        <source src="img/scarbbluffs.mp4" type="video/mp4">
+        <source src="img/scarbbluffs.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="flex-item">
+      <img src="img/taehyung.jpg" alt="oil painting of Taehyung from BTS. He is half-lit and holding a teacup">
+    </div>
+
+    <div class="flex-item">
+      <img src="img/lamphead.jpg" alt="picture of a woman with a Tiffany style lamp made of paper on top of her head, only the bottom half of her face is visible">
+    </div>
+
+    <div class="flex-item">
+      <img src="img/social.jpg" alt="flat illustration of a person scrolling through social media and feeling lonely">
+    </div>
+
+    <div class="flex-item">
+      <img src="img/converse.jpg" alt="digital painting of girl tying her shoelace brain">
+    </div>
+
+    <div class="flex-item">
+      <img src="img/Parasite.jpg" alt="poster for the movie Parasite, a film by Bong Joon Ho">
+    </div>
+
+    <div class="flex-item">
+      <img src="img/charcoall.jpg" alt="black and white still life of objects made in Asia">
+    </div>
+
+    <div class="flex-item">
+      <img src="img/intheshed.jpg" alt="watercolor painting of flowers">
+    </div>
+
+
+    <div class="flex-fullspan">
+      <div id="play-text">
+        <h1>play</h1>
+        <p>
+          Sometimes I paint, draw and craft...
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--!!!!!!!!!! CONTACT !!!!!!!!!!--->
+  <div class="flex-contact">
+    <img src="img/contact-04.svg" alt="robyn dang">
+    <div id="contact-fullspan">
+      <div class="contact-item-3">
+        <p>robyn.lou.dang@gmail.com</p>
+      </div>
+      <div class="contact-item-3" id="contact-underline">
+        <a href="https://www.behance.net/robynlouda45bd" target="_blank"><p>Behance</p></a>
+      </div>
+      <div class="contact-item-3" id="contact-underline">
+        <a href="https://www.linkedin.com/in/robyn-d-894199193/" target="_blank"><p>Linkedin</p></a>
+      </div>
+    </div>
+    <small>©Copyright 2022 Robyn Dang</small>
+  </div>
+
+</div>
+<!-- butter -->
+
+<!--Linking to JavaScript here-->
+<script src="scripts/butter.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+
+</html>

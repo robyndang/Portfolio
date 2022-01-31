@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+  <title>Robyn Dang</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/favicon-07.svg"/>
+</head>
+<body>
+
+  <!--!!!!!!!!!! NAVBAR FOR LARGE SCREENS !!!!!!!!!!--->
+      <ul class="navbar">
+        <li><a><img src="img/logo-03.svg"></a></li>
+        <li><a href="index.html" title="Case Studies">work</a></li>
+        <li><a href="Play.html" title="Play">play</a></li>
+        <li><a href="About.html" title="About">about</a></li>
+      </ul>
+
+  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+  <div class="hamburger-container">
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg" alt="hamburger menu button"/></span>
+  </div>
+
+  <div class="menu-container" id="hamburgermenu">
+    <span class="closebtn" onclick="closeMenu()"><img src="img/close.svg" alt="close hamburger menu"></span>
+
+    <div class="menu-column">
+      <div class="menu-item">
+        <p>work</p>
+        <a href="Work.html">
+          <img src="img/hovering-05.svg" alt="hovering over work"/>
+        </a>
+      </div>
+      <div class="menu-item">
+        <p>play</p>
+        <a href="Play.html">
+          <img src="img/hovering-05.svg" alt="hovering over play"/>
+        </a>
+      </div>
+      <div class="menu-item">
+        <p>about</p>
+        <a href="About.html">
+          <img src="img/hovering-05.svg" alt="hovering over about"/>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<div id="butter">
+
+<div class="flex-container">
+  <div class="rect-play"></div>
+
+  <img id="flex-case-play" src="img/check-out-cases-02.svg" alt="check out my case studies">
+
+<!--!!!!!!!!!! CASE STUDY 1 !!!!!!!!!!--->
+<div class="flex-case-1">
+
+  <div class="rect-1"></div>
+  <div class="case-hover">
+    <div class="flex-item-3 prototype-left">
+      <img src="img/weverse-left.png" alt="Weverse prototype screen">
+    </div>
+    <div class="flex-item-3 prototype-middle">
+      <video autoplay loop="autoplay" style="pointer-events: none;" controls muted>
+        <source src="img/Join_quiz.mp4" alt="Weverse prototype screen" type="video/mp4"/>
+      </video>
+    </div>
+    <div class="flex-item-3 prototype-right">
+      <img src="img/weverse-right.png" alt="Weverse prototype screen">
+    </div>
+    <div class="fade flex-fullspan">
+      <h2>Improving engagement on Weverse</h2>
+    </div>
+  </div>
+
+  <div class="fade flex-fullspan">
+    <p>
+      A global fandom platform that focuses on connecting fans with artists.
+    </p>
+  </div>
+</div>
+
+<!--!!!!!!!!!! CASE STUDY 2 !!!!!!!!!!--->
+<div class="flex-case-2">
+
+  <div class="rect-2"></div>
+  <div class="case-hover">
+    <div class="flex-item-3 prototype-left">
+      <img src="img/weverse-left.png" alt="Weverse prototype screen">
+    </div>
+    <div class="flex-item-3 prototype-middle">
+      <video autoplay loop="autoplay" style="pointer-events: none;" controls muted>
+        <source src="img/Join_quiz.mp4" alt="prototype thumbnail" type="video/mp4"/>
+      </video>
+    </div>
+    <div class="flex-item-3 prototype-right">
+      <img src="img/weverse-right.png" alt="Weverse prototype screen">
+    </div>
+    <div class="fade flex-fullspan">
+      <h2>Improving engagement on Weverse</h2>
+    </div>
+  </div>
+
+  <div class="fade flex-fullspan">
+    <p>
+      A global fandom platform that focuses on connecting fans with artists.
+    </p>
+  </div>
+</div>
+
+<!--!!!!!!!!!! CASE STUDY 3 !!!!!!!!!!--->
+<div class="flex-case-3">
+
+  <div class="rect-3"></div>
+  <div class="case-hover">
+    <div class="flex-item-3 prototype-left">
+      <img src="img/weverse-left.png" alt="Weverse prototype screen">
+    </div>
+    <div class="flex-item-3 prototype-middle">
+      <video autoplay loop="autoplay" style="pointer-events: none;" controls muted>
+        <source src="img/Join_quiz.mp4" alt="prototype thumbnail" type="video/mp4"/>
+      </video>
+    </div>
+    <div class="flex-item-3 prototype-right">
+      <img src="img/weverse-right.png" alt="Weverse prototype screen">
+    </div>
+    <div class="fade flex-fullspan">
+      <h2>Improving engagement on Weverse</h2>
+    </div>
+  </div>
+
+  <div class="fade flex-fullspan">
+    <p>
+      A global fandom platform that focuses on connecting fans with artists.
+    </p>
+  </div>
+</div>
+
+</div>
+
+<!--!!!!!!!!!! CONTACT !!!!!!!!!!--->
+<div class="flex-contact">
+  <img src="img/contact-04.svg" alt="robyn dang">
+  <div id="contact-fullspan">
+    <div class="contact-item-3">
+      <p>robyn.lou.dang@gmail.com</p>
+    </div>
+    <div class="contact-item-3" id="contact-underline">
+      <a href="https://www.behance.net/robynlouda45bd" target="_blank"><p>Behance</p></a>
+    </div>
+    <div class="contact-item-3" id="contact-underline">
+      <a href="https://www.linkedin.com/in/robyn-d-894199193/" target="_blank"><p>Linkedin</p></a>
+    </div>
+  </div>
+  <small>©Copyright 2022 Robyn Dang</small>
+</div>
+
+</div>
+<!-- butter -->
+
+<!--Linking to JavaScript here-->
+  <script src="scripts/butter.js"></script>
+  <script src="scripts/script.js"></script>
+  </body>
+
+  </html>
