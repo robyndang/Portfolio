@@ -51,10 +51,12 @@
 }
 
 *{
-font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Montserrat Alternates', serif;
 color: rgba(40, 40, 43, 1);
 font-size: clamp(12px, 30vw, 18px);
-font-weight: 500;
+font-weight: normal;
+font-style: normal;
+font-display: swap;
 line-height: 1.7em;
 padding: 0;
 max-width: 100%;
@@ -159,8 +161,10 @@ grid-template-areas:
   text-decoration: none;
   font-size: clamp(12px, 10vw, 150px);
   color: rgba(0, 142, 83, 1);
-  font-family: 'NewYork', 'Yeseva One',Century Gothic, CenturyGothic, Didot, serif;
+  font-family: 'NewYork', serif;
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
   letter-spacing: 0.04em;
   line-height: 2em;
   text-align: center;
@@ -234,8 +238,10 @@ grid-template-areas:
 h1 {
   font-size: clamp(15px, 9vw, 170px);
   color: rgba(0, 142, 83, 1);
-  font-family: 'NewYork', 'Yeseva One',Century Gothic, CenturyGothic, Didot, serif;
+  font-family: 'NewYork', serif;
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
   letter-spacing: 0.04em;
   line-height: 7rem;
   text-align: center;
@@ -244,8 +250,10 @@ h1 {
 .header small {
   font-size: clamp(12px, 6vw, 150px);
   color: rgba(0, 142, 83, 1);
-  font-family: 'NewYork', 'Yeseva One',Century Gothic, CenturyGothic, Didot, serif;
+  font-family: 'NewYork', serif;
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
   letter-spacing: 0.04em;
   line-height: 1em;
   text-align: center;
@@ -313,8 +321,10 @@ h1 {
 #bio-text p {
   font-size: clamp(12px, 10vw, 38px);
   color: rgba(0, 142, 83, 1);
-  font-family: 'NewYork', 'Yeseva One',Century Gothic, CenturyGothic, Didot, serif;
+  font-family: 'NewYork', serif;
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
   letter-spacing: 0.04em;
   line-height: 1em;
   text-align: left;
@@ -323,8 +333,10 @@ h1 {
 #play-text p {
   font-size: clamp(12px, 10vw, 38px);
   color: rgba(0, 142, 83, 1);
-  font-family: 'NewYork', 'Yeseva One',Century Gothic, CenturyGothic, Didot, serif;
+  font-family: 'NewYork', serif;
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
   letter-spacing: 0.04em;
   line-height: 1em;
   text-align: left;
@@ -447,8 +459,10 @@ h1 {
 .flex-fullspan h2 {
   font-size: clamp(10px, 6vw, 130px);
   color: rgba(0, 142, 83, 1);
-  font-family: 'NewYork', 'Yeseva One',Century Gothic, CenturyGothic, Didot, serif;
+  font-family: 'NewYork', serif;
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
   letter-spacing: 0.04em;
   line-height: 1.2em;
   text-align: center;
