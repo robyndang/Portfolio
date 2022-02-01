@@ -1072,6 +1072,10 @@ h1 {
     display: none;
   }
 
+  #butter {
+    display: none;
+  }
+
   .header {
     grid-area: header;
     display: grid;
@@ -1200,6 +1204,10 @@ h1 {
 
 @media (max-width: 280px) and (min-width:0px) {
   .navbar {
+    display: none;
+  }
+
+  #butter {
     display: none;
   }
 
@@ -1337,6 +1345,10 @@ h1 {
     display: none;
   }
 
+  #butter {
+    display: none;
+  }
+
   .header {
     grid-area: header;
     display: grid;
@@ -1466,6 +1478,10 @@ h1 {
 
 @media (width: 540px) and (height:720px) {
   .navbar {
+    display: none;
+  }
+
+  #butter {
     display: none;
   }
 
