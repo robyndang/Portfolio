@@ -284,6 +284,20 @@ h1 {
   grid-area: overlap;
 }
 
+#wheatfield {
+  z-index: 1;
+  /* grid-area: cell-3; */
+  padding: 1em;
+  width: 100%
+  display: grid;
+  grid-template-areas: "overlap";
+}
+
+#wheatfield img {
+  z-index: 1;
+  grid-area: overlap;
+}
+
 #bubble-text {
   width: clamp(20px, 18vw, 300px);
   height: clamp(20px, 18vw, 300px);
@@ -315,8 +329,6 @@ h1 {
   z-index: 300;
   transform: translateY(-12%);
 }
-
-
 
 #bio-text p {
   font-size: clamp(12px, 10vw, 38px);
