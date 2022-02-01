@@ -24,19 +24,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Montserrat Alternates';
-    src: url('fonts/MontserratAlternates-Light.eot');
-    src: url('fonts/MontserratAlternates-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MontserratAlternates-Light.woff2') format('woff2'),
-        url('fonts/MontserratAlternates-Light.woff') format('woff'),
-        url('fonts/MontserratAlternates-Light.ttf') format('truetype'),
-        url('fonts/MontserratAlternates-Light.svg#MontserratAlternates-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
 ::-webkit-scrollbar {
   width: 0.5em;
 }
