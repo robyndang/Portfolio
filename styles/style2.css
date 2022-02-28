@@ -47,7 +47,7 @@ font-style: normal;
 font-display: swap;
 line-height: 2em;
 font-weight: 500;
-
+text-decoration: none;
 padding: 0;
 max-width: 100%;
 margin: 0%!important;
@@ -541,10 +541,6 @@ grid-template-areas:
 .contact-item-3 {
   padding: 0% 5%;
   text-align: center;
-}
-
-.contact-item-3 a {
-  text-decoration: none;
 }
 
 /*PLAY*/
