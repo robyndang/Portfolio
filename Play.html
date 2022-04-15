@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/style2.css"/>
   <title>Robyn Dang</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -12,68 +12,83 @@
 </head>
 <body>
 
-  <!--!!!!!!!!!! NAVBAR FOR LARGE SCREENS !!!!!!!!!!--->
-      <ul class="navbar">
-        <li><a><img src="img/logo-03.svg"></a></li>
-        <li><a href="index.html" title="Case Studies">work</a></li>
-        <li><a href="Play.html" title="Play">play</a></li>
-        <li><a href="About.html" title="About">about</a></li>
-      </ul>
 
-  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
-  <div class="hamburger-container">
-    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger.svg" alt="hamburger menu button"/></span>
-  </div>
+    <!--!!!!!!!!!! NAVBAR FOR LARGE SCREENS !!!!!!!!!!--->
+    <ul class="navbar">
+      <li><a href="Contact.html" title="Contact">contact</a></li>
+      <li><a href="About.html" title="About">about</a></li>
+      <li><a href="Play.html" title="Play">play</a></li>
+      <li><a href="index.html" title="Work">work</a></li>
+    </ul>
 
-  <div class="menu-container" id="hamburgermenu">
-    <span class="closebtn" onclick="closeMenu()"><img src="img/close.svg" alt="close hamburger menu"></span>
+    <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+    <div class="hamburger-container">
+      <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg" alt="hamburger menu button"/></span>
+    </div>
 
-    <div class="menu-column">
-      <div class="menu-item">
-        <p>work</p>
-        <a href="index.html">
-          <img src="img/hovering-05.svg" alt="hovering over work"/>
-        </a>
-      </div>
-      <div class="menu-item">
-        <p>play</p>
-        <a href="Play.html">
-          <img src="img/hovering-05.svg" alt="hovering over play"/>
-        </a>
-      </div>
-      <div class="menu-item">
-        <p>about</p>
-        <a href="About.html">
-          <img src="img/hovering-05.svg" alt="hovering over about"/>
-        </a>
+    <div class="menu-container" id="hamburgermenu">
+      <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg" alt="close hamburger menu"></span>
+
+      <div class="menu-column">
+        <div class="menu-item">
+          <a href="index.html">
+            <p>work</p>
+          </a>
+          <a href="index.html">
+            <img src="img/circled-15.svg" alt="hovering over work"/>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="Play.html">
+            <p>play</p>
+          </a>
+          <a href="Play.html">
+            <img src="img/circled-15.svg" alt="hovering over play"/>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="About.html">
+            <p>about</p>
+          </a>
+          <a href="About.html">
+            <img src="img/circled-15.svg" alt="hovering over about"/>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="index.html">
+            <p>contact</p>
+          </a>
+          <a href="index.html">
+            <img src="img/circled-15.svg" alt="hovering over contact"/>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
 <div id="butter">
 
 <!-- <div class="PLAY-header"> -->
-    <img id="wheatfield-front" src="img/wheatfield1-08.svg" alt="Van Gogh's painting named Wheat Field with Cypresses" data-speed= "1" class="layer">
-    <img id="wheatfield-back" src="img/wheatfield2-08.svg" alt="Van Gogh's painting named Wheat Field with Cypresses" data-speed= "-2" class="layer">
+    <!-- <img id="wheatfield-front" src="img/wheatfield1-08.svg" alt="Van Gogh's painting named Wheat Field with Cypresses" data-speed= "1" class="layer">
+    <img id="wheatfield-back" src="img/wheatfield2-08.svg" alt="Van Gogh's painting named Wheat Field with Cypresses" data-speed= "-2" class="layer"> -->
 <!-- </div> -->
 
 <!--!!!!!!!!!! CONTENT !!!!!!!!!!--->
-  <div class="flex-container">
+  <div class="flex-container-pages">
 
-    <div class="rect-play"></div>
+    <div class="rect-pages"></div>
 
-    <div class="flex-fullspan">
+    <div class="flex-fullspan-pages">
       <h1>play</h1>
       <p>
         Sometimes I paint, draw and craft.
       <p>
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-left">
       <img src="img/lastblush.jpg" alt="line painting on wood of a broken hearted man.">
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-right">
       <video muted autoplay loop title="Painting timelapse of a fallen angel breaking a cupid's arrow">
         <source src="img/anti-romantic.mp4" type="video/mp4">
         <source src="img/anti-romantic.ogg" type="video/ogg">
@@ -81,15 +96,15 @@
       </video>
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-left">
       <img src="img/vulnerability.jpg" alt="digital painting of a young man in a winter landscape. His arms stand in the wind as crows pull the yarn from his sweater away.">
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-right">
       <img src="img/queens-gambit.jpg" alt="gouache painting of Beth Harmon from Queen's Gambit">
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-left">
       <video muted autoplay loop title="digital painting timelapse of Scarborough Bluffs poster">
         <source src="img/scarbbluffs.mp4" type="video/mp4">
         <source src="img/scarbbluffs.ogg" type="video/ogg">
@@ -97,31 +112,31 @@
       </video>
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-right">
       <img src="img/taehyung.jpg" alt="oil painting of Taehyung from BTS. He is half-lit and holding a teacup">
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-left">
       <img src="img/lamphead.jpg" alt="picture of a woman with a Tiffany style lamp made of paper on top of her head, only the bottom half of her face is visible">
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-right">
       <img src="img/social.jpg" alt="flat illustration of a person scrolling through social media and feeling lonely">
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-left">
       <img src="img/converse.jpg" alt="digital painting of girl tying her shoelace brain">
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-right">
       <img src="img/Parasite.jpg" alt="poster for the movie Parasite, a film by Bong Joon Ho">
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-left">
       <img src="img/charcoall.jpg" alt="black and white still life of objects made in Asia">
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item-pages-right">
       <img src="img/intheshed.jpg" alt="watercolor painting of flowers">
     </div>
 
@@ -130,8 +145,11 @@
 
   <!--!!!!!!!!!! CONTACT !!!!!!!!!!--->
   <div class="flex-contact">
+
     <h2>get in touch</h2>
-    <img src="img/contact-04.png" alt="robyn dang">
+
+    <img src="img/contact-04.svg" alt="robyn dang">
+
     <div id="contact-fullspan">
       <div class="contact-item-3">
         <p>robyn.lou.dang@gmail.com</p>
@@ -143,7 +161,9 @@
         <a href="https://www.linkedin.com/in/robyn-d-894199193/" target="_blank"><p>Linkedin</p></a>
       </div>
     </div>
+
     <small>©Copyright 2022 Robyn Dang</small>
+
   </div>
 
 </div>
