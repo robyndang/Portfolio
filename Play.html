@@ -12,58 +12,57 @@
 </head>
 <body>
 
+  <!--!!!!!!!!!! NAVBAR FOR LARGE SCREENS !!!!!!!!!!--->
+  <ul class="navbar">
+    <li><a href="Contact.html" title="Contact">contact</a></li>
+    <li><a href="About.html" title="About">about</a></li>
+    <li><a href="Play.html" title="Play">play</a></li>
+    <li><a href="index.html" title="Work">work</a></li>
+  </ul>
 
-    <!--!!!!!!!!!! NAVBAR FOR LARGE SCREENS !!!!!!!!!!--->
-    <ul class="navbar">
-      <li><a href="Contact.html" title="Contact">contact</a></li>
-      <li><a href="About.html" title="About">about</a></li>
-      <li><a href="Play.html" title="Play">play</a></li>
-      <li><a href="index.html" title="Work">work</a></li>
-    </ul>
+  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+  <div class="hamburger-container">
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg" alt="hamburger menu button"/></span>
+  </div>
 
-    <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
-    <div class="hamburger-container">
-      <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg" alt="hamburger menu button"/></span>
-    </div>
+  <div class="menu-container" id="hamburgermenu">
+    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg" alt="close hamburger menu"></span>
 
-    <div class="menu-container" id="hamburgermenu">
-      <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg" alt="close hamburger menu"></span>
-
-      <div class="menu-column">
-        <div class="menu-item">
-          <a href="index.html">
-            <p>work</p>
-          </a>
-          <a href="index.html">
-            <img src="img/circled-15.svg" alt="hovering over work"/>
-          </a>
-        </div>
-        <div class="menu-item">
-          <a href="Play.html">
-            <p>play</p>
-          </a>
-          <a href="Play.html">
-            <img src="img/circled-15.svg" alt="hovering over play"/>
-          </a>
-        </div>
-        <div class="menu-item">
-          <a href="About.html">
-            <p>about</p>
-          </a>
-          <a href="About.html">
-            <img src="img/circled-15.svg" alt="hovering over about"/>
-          </a>
-        </div>
-        <div class="menu-item">
-          <a href="index.html">
-            <p>contact</p>
-          </a>
-          <a href="index.html">
-            <img src="img/circled-15.svg" alt="hovering over contact"/>
-          </a>
-        </div>
+    <div class="menu-column">
+      <div class="menu-item">
+        <a href="index.html">
+          <p>work</p>
+        </a>
+        <a href="index.html">
+          <img src="img/circled-15.svg" alt="clicked work"/>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="Play.html">
+          <p>play</p>
+        </a>
+        <a href="Play.html">
+          <img src="img/circled-15.svg" alt="clicked play"/>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="About.html">
+          <p>about</p>
+        </a>
+        <a href="About.html">
+          <img src="img/circled-15.svg" alt="clicked about"/>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="index.html">
+          <p>contact</p>
+        </a>
+        <a href="index.html">
+          <img src="img/circled-15.svg" alt="clicked contact"/>
+        </a>
       </div>
     </div>
+  </div>
 
 <div id="butter">
 
@@ -85,11 +84,11 @@
     </div>
 
     <div class="flex-item-pages-left">
-      <img src="img/lastblush.jpg" alt="line painting on wood of a broken hearted man.">
+      <img src="img/lastblush.jpg" alt="Line painting on a wood canvas of a broken hearted man lying on the ground. A blossom tree grows out of his chest as moss and fungi consume him. ">
     </div>
 
     <div class="flex-item-pages-right">
-      <video muted autoplay loop title="Painting timelapse of a fallen angel breaking a cupid's arrow">
+      <video muted autoplay loop title="Painting timelapse of a dark angel breaking cupid's arrow">
         <source src="img/anti-romantic.mp4" type="video/mp4">
         <source src="img/anti-romantic.ogg" type="video/ogg">
         Your browser does not support the video tag.
@@ -97,15 +96,15 @@
     </div>
 
     <div class="flex-item-pages-left">
-      <img src="img/vulnerability.jpg" alt="digital painting of a young man in a winter landscape. His arms stand in the wind as crows pull the yarn from his sweater away.">
+      <img src="img/vulnerability.jpg" alt="Digital painting that mimics watercolor of a young man in a winter landscape. His arms stand in the wind as crows pull the yarn from his sweater away leaving him vulnerable. Underneath the sweater is not a body, but branches.">
     </div>
 
     <div class="flex-item-pages-right">
-      <img src="img/queens-gambit.jpg" alt="gouache painting of Beth Harmon from Queen's Gambit">
+      <img src="img/queens-gambit.jpg" alt="Gouache painting of Beth Harmon from Queen's Gambit. She practices chess as she bathes in a lavish green hotel bathroom.">
     </div>
 
     <div class="flex-item-pages-left">
-      <video muted autoplay loop title="digital painting timelapse of Scarborough Bluffs poster">
+      <video muted autoplay loop title="Digital painting timelapse of two people painting on a cliff overlooking a lake. The poster reads 'Scarborough Bluffs'">
         <source src="img/scarbbluffs.mp4" type="video/mp4">
         <source src="img/scarbbluffs.ogg" type="video/ogg">
         Your browser does not support the video tag.
@@ -113,31 +112,31 @@
     </div>
 
     <div class="flex-item-pages-right">
-      <img src="img/taehyung.jpg" alt="oil painting of Taehyung from BTS. He is half-lit and holding a teacup">
+      <img src="img/taehyung.jpg" alt="Oil painting of Taehyung from BTS in a tan suit. He is dramtically half-lit and holding a gold teacup and saucer.">
     </div>
 
     <div class="flex-item-pages-left">
-      <img src="img/lamphead.jpg" alt="picture of a woman with a Tiffany style lamp made of paper on top of her head, only the bottom half of her face is visible">
+      <img src="img/lamphead.jpg" alt="Picture of a woman with a Tiffany style lamp made of paper on top of her head, only the bottom half of her face is visible.">
     </div>
 
     <div class="flex-item-pages-right">
-      <img src="img/social.jpg" alt="flat illustration of a person scrolling through social media and feeling lonely">
+      <img src="img/social.jpg" alt="Flat illustration of a person scrolling through social media and feeling lonely. They're seeing posts of people enjoying a party they weren't invited to.">
     </div>
 
     <div class="flex-item-pages-left">
-      <img src="img/converse.jpg" alt="digital painting of girl tying her shoelace brain">
+      <img src="img/converse.jpg" alt="Digital painting of a girl skateboarding and tying her brain which is made of shoelaces.">
     </div>
 
     <div class="flex-item-pages-right">
-      <img src="img/Parasite.jpg" alt="poster for the movie Parasite, a film by Bong Joon Ho">
+      <img src="img/Parasite.jpg" alt="A collage style poster for the movie Parasite, a film by Bong Joon Ho. It's made of oil paint and scraps of ripped paper. The bottom half of Ki-woo's face is submerged in water. The basement where he lives with his lower-class family is flooded below.">
     </div>
 
     <div class="flex-item-pages-left">
-      <img src="img/charcoall.jpg" alt="black and white still life of objects made in Asia">
+      <img src="img/charcoall.jpg" alt="A black and white still life of objects made in Asia like Pocky, a Naruto manga, a book of Japanese folktales and tea cups.">
     </div>
 
     <div class="flex-item-pages-right">
-      <img src="img/intheshed.jpg" alt="watercolor painting of flowers">
+      <img src="img/intheshed.jpg" alt="Watercolor painting of flowers in pots on a shelf.">
     </div>
 
 
