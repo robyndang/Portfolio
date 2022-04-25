@@ -204,16 +204,6 @@ grid-template-areas:
     transition: opacity .55s ease-in-out;
 }
 
-/* FADE IN */
-.fade p, .fade h2 {
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.fade p.appear, .fade h2.appear {
-  opacity: 1;
-}
-
 /* HEADER AREA */
 .header {
   grid-area: header;
