@@ -857,6 +857,10 @@ form button {
     padding-top: 10%;
   }
 
+  #contact-underline p, .underline {
+    text-decoration: underline;
+  }
+
   .about-video iframe {
     padding: 0% 5%;
   }
@@ -1187,6 +1191,10 @@ form button {
 
   .flex-contact small {
     font-size: clamp(14px ,10vw, 16px);
+  }
+
+  #contact-underline p, .underline {
+    text-decoration: underline;
   }
 
   .about-video iframe {
