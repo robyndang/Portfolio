@@ -586,7 +586,22 @@ grid-template-areas:
   padding: 5%;
 }
 
-.flex-contact h2{
+.flex-contact-page {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+  height: auto;
+  text-align: center;
+  border-radius: 0%;
+  grid-area: contact;
+  z-index: 200;
+  background: rgba(244, 250, 252, 1);
+  padding: 12% 5%;
+}
+
+.flex-contact h2, .flex-contact-page h2{
   font-size: clamp(16px, 30vw, 100px);
   color: rgba(0, 142, 83, 1);
   font-family: 'NewYork', serif;
@@ -598,7 +613,7 @@ grid-template-areas:
   text-align: center;
 }
 
-.flex-contact img {
+.flex-contact img, .flex-contact-page img {
   align-self: center;
   padding: 0% 20%;
 }
@@ -617,7 +632,7 @@ grid-template-areas:
   padding: 5% 0%;
 }
 
-.flex-contact small {
+.flex-contact small, .flex-contact-page small{
   font-size: clamp(14px ,15vw, 16px);
   color: rgba(40, 40, 43, 0.8);
 }
@@ -793,7 +808,7 @@ form input, form textarea {
 
 form button {
   padding: 15px;
-  background: #ff5361;
+  background: rgba(0, 142, 83, 1);
   color: white;
   font-size: 18px;
   border: 0;
@@ -873,6 +888,14 @@ form button {
     min-width: 45%;
     padding-right: 0.5em;
   }
+
+  .flex-contact-page {
+    padding: 60% 2%;
+  }
+
+  .flex-contact {
+    padding: 20% 2%;
+  }
 }
 
 @media (max-width: 280px) and (min-width:0px) {
@@ -929,15 +952,15 @@ form button {
     padding: 20% 2%;
   }
 
-  .flex-contact h2, .carousel h2 {
+  .flex-contact h2, .flex-contact-page h2, .carousel h2 {
     font-size: clamp(16px, 12vw, 100px);
   }
 
-  .flex-contact img {
+  .flex-contact img, .flex-contact-page img {
     padding: 5% 10%;
   }
 
-  .flex-contact small {
+  .flex-contact small, .flex-contact-page small{
     font-size: clamp(6px ,5vw, 8px);
   }
 
@@ -1004,15 +1027,11 @@ form button {
     width: 100%;
   }
 
-  .flex-contact {
-    padding: 20% 2%;
-  }
-
-  .flex-contact h2, .carousel h2{
+  .flex-contact h2, .flex-contact-page h2, .carousel h2{
     font-size: clamp(16px, 10vw, 100px);
   }
 
-  .flex-contact img {
+  .flex-contact img, .flex-contact-page img{
     padding: 5% 10%;
   }
 
@@ -1024,7 +1043,7 @@ form button {
     font-size: clamp(16px ,13vw, 18px);
   }
 
-  .flex-contact small {
+  .flex-contact small, .flex-contact-page small{
     font-size: clamp(10px ,5vw, 12px);
   }
 }
@@ -1079,15 +1098,11 @@ form button {
     width: 100%;
   }
 
-  .flex-contact {
-    padding: 20% 2%;
-  }
-
-  .flex-contact h2, .carousel h2{
+  .flex-contact h2, .flex-contact-page h2, .carousel h2{
     font-size: clamp(16px, 10vw, 100px);
   }
 
-  .flex-contact img {
+  .flex-contact img, .flex-contact-page img {
     padding: 5% 10%;
   }
 
@@ -1099,8 +1114,16 @@ form button {
     font-size: clamp(18px, 20vw, 24px);
   }
 
-  .flex-contact small {
+  .flex-contact small, .flex-contact-page small{
     font-size: clamp(14px ,10vw, 16px);
+  }
+
+  .flex-contact-page {
+    padding: 60% 2%;
+  }
+
+  .flex-contact {
+    padding: 20% 2%;
   }
 }
 
@@ -1169,15 +1192,11 @@ form button {
     width: 100%;
   }
 
-  .flex-contact {
-    padding: 20% 2%;
-  }
-
-  .flex-contact h2, .carousel h2{
+  .flex-contact h2, .flex-contact-page h2, .carousel h2{
     font-size: clamp(16px, 10vw, 100px);
   }
 
-  .flex-contact img {
+  .flex-contact img, .flex-contact-page img{
     padding: 5% 10%;
   }
 
@@ -1189,7 +1208,7 @@ form button {
     font-size: clamp(18px, 20vw, 24px);
   }
 
-  .flex-contact small {
+  .flex-contact small, .flex-contact-page small{
     font-size: clamp(14px ,10vw, 16px);
   }
 
@@ -1209,6 +1228,14 @@ form button {
     min-width: 45%;
     padding-right: 1em;
   }
+
+  .flex-contact-page {
+    padding: 60% 2%;
+  }
+
+  .flex-contact {
+    padding: 20% 2%;
+  }
 }
 
 /*DESKTOP*/
@@ -1221,7 +1248,7 @@ form button {
     display: none;
   }
 
-  .flex-contact img {
+  .flex-contact img, .flex-contact-page img {
       padding: 3% 20%;
   }
 }
