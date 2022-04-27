@@ -54,10 +54,6 @@ margin: 0%!important;
 box-sizing: border-box;
 }
 
-p, h1, h2, h3, video {
-  z-index: 300;
-}
-
 figcaption {
 font-family: 'Montserrat Alternates', serif;
 color: rgba(40, 40, 43, 1);
@@ -827,6 +823,10 @@ form button {
   border-radius: 100px;
   justify-content: center;
   align-self: center;
+}
+
+#inprogress p{
+  z-index: 500;
 }
 
 /*MEDIA QUERIES*/
