@@ -120,7 +120,7 @@ grid-template-areas:
   top: clamp(12px, 5vw, 36px);
   right: clamp(16px, 5vw, 48px);
   cursor: pointer;
-  z-index: 300;
+  z-index: 450;
   overflow: hidden;
 }
 
@@ -144,7 +144,7 @@ grid-template-areas:
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 400;
+  z-index: 500;
   background: rgba(244, 250, 252, 0.95);
   overflow: hidden;
   transition: 1s ease-in-out;
@@ -922,7 +922,7 @@ form button {
     font-size: clamp(10px, 12vw, 130px);
   }
 
-  .flex-fullspan-HOME p {
+  .flex-fullspan-HOME p, .flex-fullspan-pages p {
     font-size: clamp(12px, 8vw, 14px);
   }
 
@@ -997,7 +997,7 @@ form button {
     padding: 0% 5%;
   }
 
-  .flex-fullspan-HOME p {
+  .flex-fullspan-HOME p, .flex-fullspan-pages p {
     font-size: clamp(12px, 10vw, 16px);
   }
 
@@ -1068,7 +1068,7 @@ form button {
     padding: 0% 10%;
   }
 
-  .flex-fullspan-HOME p {
+  .flex-fullspan-HOME p, .flex-fullspan-pages p {
     font-size: clamp(18px, 20vw, 24px);
   }
 
@@ -1162,7 +1162,7 @@ form button {
     padding: 0% 10%;
   }
 
-  .flex-fullspan-HOME p {
+  .flex-fullspan-HOME p, .flex-fullspan-pages p {
     font-size: clamp(18px, 20vw, 24px);
   }
 
