@@ -570,6 +570,10 @@ grid-template-areas:
   z-index: 300;
 }
 
+.flex-item-pages-left video, .flex-item-pages-right video{
+  max-width: 500px;
+}
+
 /*CONTACT*/
 .flex-contact {
   position: relative;
