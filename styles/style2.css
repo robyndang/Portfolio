@@ -41,14 +41,12 @@
 *{
 font-family: 'Montserrat Alternates', serif;
 color: rgba(40, 40, 43, 1);
-font-size: clamp(12px, 30vw, 18px);
-font-weight: normal;
+font-size: clamp(16px, 25vw, 16px);
 font-style: normal;
 font-display: swap;
 line-height: 2em;
 font-weight: 500;
 text-decoration: none;
-padding: 0;
 max-width: 100%;
 margin: 0%!important;
 box-sizing: border-box;
@@ -254,7 +252,7 @@ grid-template-areas:
 
 #flex-case-studies {
   width: 100%;
-  padding: 20% 10%;
+  padding: 20% 20%;
   justify-content: center;
   align-self: center;
   text-align: center;
@@ -337,7 +335,7 @@ grid-template-areas:
 }
 
 .flex-fullspan-HOME h2 {
-  font-size: clamp(10px, 6vw, 130px);
+  font-size: clamp(20px, 9vw, 85px);
   color: rgba(0, 142, 83, 1);
   font-family: 'NewYork', serif;
   font-weight: normal;
@@ -602,7 +600,7 @@ grid-template-areas:
 }
 
 .flex-contact h2, .flex-contact-page h2{
-  font-size: clamp(16px, 30vw, 100px);
+  font-size: clamp(20px, 9vw, 85px);
   color: rgba(0, 142, 83, 1);
   font-family: 'NewYork', serif;
   font-weight: normal;
@@ -684,8 +682,9 @@ grid-template-areas:
 }
 
 /* ABOUT */
+
 .about-video {
-  padding:56.25% 0 0 0;
+  padding:50% 0 0 0;
   position:relative;
   z-index: 300;
   height: 100%;
@@ -698,7 +697,7 @@ grid-template-areas:
   left:0;
   width:100%;
   height:100%;
-  padding: 0% 10%;
+  padding: 5% 10% 0% 10%;
 }
 
 .about-bio {
@@ -716,7 +715,7 @@ grid-template-areas:
 }
 
 .carousel h2 {
-  font-size: clamp(16px, 30vw, 100px);
+  font-size: clamp(20px, 9vw, 85px);
   color: rgba(0, 142, 83, 1);
   font-family: 'NewYork', serif;
   font-weight: normal;
@@ -843,13 +842,37 @@ form button {
     padding: 25% 0 5% 0;
   }
 
+  .flex-fullspan-HOME h2 {
+    padding: 15% 1% 10% 1%;
+  }
+
+  .flex-fullspan-HOME h2, .flex-contact h2, .carousel h2 {
+    font-size: clamp(10px, 10vw, 80px);
+  }
+
+  .flex-fullspan-pages h1 {
+    font-size: clamp(30px, 24vw, 140px);
+  }
+
+  .flex-fullspan-HOME p, .flex-fullspan-pages p, figcaption, .about-bio p {
+    font-size: clamp(12px, 10vw, 14px);
+  }
+
   .flex-fullspan-HOME p {
     padding: 0% 1%;
     text-align: center;
   }
 
-  .flex-fullspan-HOME h2 {
-    padding: 15% 1% 10% 1%;
+  #contact-fullspan p {
+    font-size: clamp(16px ,13vw, 18px);
+  }
+
+  #contact-underline p, .underline {
+    text-decoration: underline;
+  }
+
+  .flex-contact small {
+    font-size: clamp(10px ,5vw, 12px);
   }
 
   .flex-item-pages-left, .flex-item-pages-right {
@@ -864,16 +887,8 @@ form button {
     padding: 20% 5% 10% 5%;
   }
 
-  .flex-fullspan-pages h1 {
-    font-size: clamp(30px, 24vw, 140px);
-  }
-
   .flex-fullspan-pages p {
     padding-top: 10%;
-  }
-
-  #contact-underline p, .underline {
-    text-decoration: underline;
   }
 
   .about-video iframe {
@@ -918,14 +933,6 @@ form button {
     padding: 0% 5%;
   }
 
-  .flex-fullspan-HOME h2 {
-    font-size: clamp(10px, 12vw, 130px);
-  }
-
-  .flex-fullspan-HOME p, .flex-fullspan-pages p {
-    font-size: clamp(12px, 8vw, 14px);
-  }
-
   .flex-phone {
     width: 35%;
     padding: 0;
@@ -952,10 +959,6 @@ form button {
     padding: 20% 2%;
   }
 
-  .flex-contact h2, .flex-contact-page h2, .carousel h2 {
-    font-size: clamp(16px, 12vw, 100px);
-  }
-
   .flex-contact img, .flex-contact-page img {
     padding: 5% 10%;
   }
@@ -966,10 +969,6 @@ form button {
 
   #contact-fullspan {
     flex-wrap: wrap;
-  }
-
-  #contact-fullspan p {
-    font-size: clamp(12px ,12vw, 16px);
   }
 }
 
@@ -997,14 +996,6 @@ form button {
     padding: 0% 5%;
   }
 
-  .flex-fullspan-HOME p, .flex-fullspan-pages p {
-    font-size: clamp(12px, 10vw, 16px);
-  }
-
-  .flex-fullspan-HOME h2 {
-    font-size: clamp(10px, 12vw, 130px);
-  }
-
   .flex-phone {
     width: 35%;
     padding: 0;
@@ -1027,24 +1018,12 @@ form button {
     width: 100%;
   }
 
-  .flex-contact h2, .flex-contact-page h2, .carousel h2{
-    font-size: clamp(16px, 10vw, 100px);
-  }
-
   .flex-contact img, .flex-contact-page img{
     padding: 5% 10%;
   }
 
   #contact-fullspan {
     flex-wrap: wrap;
-  }
-
-  #contact-fullspan p {
-    font-size: clamp(16px ,13vw, 18px);
-  }
-
-  .flex-contact small, .flex-contact-page small{
-    font-size: clamp(10px ,5vw, 12px);
   }
 }
 
@@ -1144,6 +1123,35 @@ form button {
     line-height: 1.3em;
   }
 
+  .flex-fullspan-pages h1 {
+    font-size: clamp(30px, 24vw, 140px);
+  }
+
+  .flex-fullspan-HOME p, .flex-fullspan-pages p, figcaption, .about-bio p {
+    font-size: clamp(16px, 15vw, 18px);
+  }
+
+  .flex-fullspan-HOME p {
+    padding: 0% 1%;
+    text-align: left;
+  }
+
+  .flex-contact h2, .carousel h2, .flex-fullspan-HOME h2 {
+    font-size: clamp(50px, 15vw, 70px);
+  }
+
+  #contact-fullspan p {
+    font-size: clamp(18px, 20vw, 24px);
+  }
+
+  #contact-underline p, .underline {
+    text-decoration: underline;
+  }
+
+  .flex-contact small {
+    font-size: clamp(12px ,8vw, 14px);
+  }
+
   #flex-header-monet {
     width: 100%;
     padding: 0;
@@ -1160,14 +1168,6 @@ form button {
 
   .flex-fullspan-HOME {
     padding: 0% 10%;
-  }
-
-  .flex-fullspan-HOME p, .flex-fullspan-pages p {
-    font-size: clamp(18px, 20vw, 24px);
-  }
-
-  .flex-fullspan-HOME h2 {
-    font-size: clamp(10px, 12vw, 130px);
   }
 
   .flex-phone {
@@ -1192,28 +1192,12 @@ form button {
     width: 100%;
   }
 
-  .flex-contact h2, .flex-contact-page h2, .carousel h2{
-    font-size: clamp(16px, 10vw, 100px);
-  }
-
   .flex-contact img, .flex-contact-page img{
     padding: 5% 10%;
   }
 
   #contact-fullspan {
     flex-wrap: wrap;
-  }
-
-  #contact-fullspan p {
-    font-size: clamp(18px, 20vw, 24px);
-  }
-
-  .flex-contact small, .flex-contact-page small{
-    font-size: clamp(14px ,10vw, 16px);
-  }
-
-  #contact-underline p, .underline {
-    text-decoration: underline;
   }
 
   .about-video iframe {
@@ -1250,5 +1234,15 @@ form button {
 
   .flex-contact img, .flex-contact-page img {
       padding: 3% 20%;
+  }
+}
+
+@media (max-width: 1920px) and (max-height:1080px) {
+  p {
+  font-size: clamp(16px, 28vw, 18px);
+  }
+
+  #flex-case-studies {
+    padding: 20% 10%;
   }
 }
