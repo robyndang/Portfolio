@@ -938,6 +938,10 @@ form button {
     padding: 0;
   }
 
+  .flex-phone video, .flex-phone img {
+    border-radius: 7px;
+  }
+
   .prototype-right {
     display: none;
   }
@@ -989,7 +993,7 @@ form button {
 
   #flex-case-studies {
     width: 100%;
-    padding: 25% 0;
+    padding: 25% 0 ;
   }
 
   .flex-fullspan-HOME {
@@ -1016,6 +1020,7 @@ form button {
 
   .flex-phone video, .flex-phone img {
     width: 100%;
+    border-radius: 10px;  
   }
 
   .flex-contact img, .flex-contact-page img{
