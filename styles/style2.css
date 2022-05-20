@@ -273,6 +273,7 @@ grid-template-areas:
 .flex-case-1 {
   grid-area: case-study-1;
   padding-bottom: 20%;
+  background-color: #e3ffe0; /*green*/
 }
 
 .flex-case-2 {
@@ -284,7 +285,8 @@ grid-template-areas:
 .flex-case-3 {
   grid-area: case-study-3;
   padding-bottom: 20%;
-  background-color: #fffdd1;
+  /* background-color: #fffdd1; /*yellow*/ */
+  background-color: #282829; /*grey*/
 }
 
 .rect-1 {
@@ -1020,7 +1022,7 @@ form button {
 
   .flex-phone video, .flex-phone img {
     width: 100%;
-    border-radius: 10px;  
+    border-radius: 10px;
   }
 
   .flex-contact img, .flex-contact-page img{
