@@ -404,7 +404,7 @@ grid-template-areas:
   -o-transition: 0.70s;
 }
 
-.case-hover:hover .prototype-middle video  {
+.case-hover:hover .prototype-middle video, .case-hover:hover .prototype-middle img {
   transform: scale(1.1);
   transition: 0.70s;
   -webkit-transition: 0.70s;
