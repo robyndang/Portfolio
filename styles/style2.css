@@ -89,6 +89,7 @@ grid-template-areas:
   list-style: none;
   padding-right: 1.5rem;
   width: 100%;
+  background: rgba(244, 250, 252, 0.85);
 }
 
 .navbar li {
@@ -102,7 +103,7 @@ grid-template-areas:
   text-decoration: none;
   width: 100%;
   display: block;
-  padding: 16px 15px;
+  padding: 5px 15px;
   font-size: clamp(18px, 5vw, 24px);
   color: rgba(0, 142, 83, 1);
   text-align: center;
@@ -1019,7 +1020,7 @@ form button {
   .navbar {
   display: none;
   }
-  
+
   #flex-header-monet {
     width: 100%;
     padding: 0;
