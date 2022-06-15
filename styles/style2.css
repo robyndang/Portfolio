@@ -821,11 +821,6 @@ form button {
     padding: 25% 5%;
   }
 
-  #flex-header-text h2 {
-    font-size: clamp(15px, 6vw, 30px);
-    line-height: 1.3em;
-  }
-
   #flex-header-text img {
     padding: 25% 0 5% 0;
   }
@@ -834,33 +829,13 @@ form button {
     padding: 15% 1% 10% 1%;
   }
 
-  .flex-fullspan-HOME h2, .flex-contact h2, .carousel h2 {
-    font-size: clamp(10px, 10vw, 80px);
-  }
-
-  .flex-fullspan-pages h1 {
-    font-size: clamp(30px, 24vw, 140px);
-  }
-
-  .flex-fullspan-HOME p, .flex-fullspan-pages p, figcaption, .about-bio p {
-    font-size: clamp(12px, 10vw, 14px);
-  }
-
   .flex-fullspan-HOME p {
     padding: 0% 1%;
     text-align: center;
   }
 
-  #contact-fullspan p {
-    font-size: clamp(16px ,13vw, 18px);
-  }
-
   #contact-underline p, .underline {
     text-decoration: underline;
-  }
-
-  .flex-contact small {
-    font-size: clamp(10px ,5vw, 12px);
   }
 
   .flex-item-pages-left, .flex-item-pages-right {
@@ -898,10 +873,36 @@ form button {
 }
 
 @media (max-width: 280px) and (min-width:0px) {
+  /* FONT SIZE START */
+  #flex-header-text h2 {
+    font-size: clamp(15px, 6vw, 30px);
+    line-height: 1.3em;
+  }
+
+  .flex-fullspan-HOME h2, .flex-contact h2, .carousel h2 {
+    font-size: clamp(10px, 10vw, 80px);
+  }
+
+  .flex-fullspan-pages h1 {
+    font-size: clamp(30px, 24vw, 140px);
+  }
+
+  .flex-fullspan-HOME p, .flex-fullspan-pages p, figcaption, .about-bio p {
+    font-size: clamp(10px, 2vw, 12px);
+  }
+
+  #contact-fullspan p {
+    font-size: clamp(16px ,13vw, 18px);
+  }
+
+  .flex-contact small {
+    font-size: clamp(6px ,5vw, 8px);
+  }
+  /* FONT SIZE END */
 
   #flex-header-monet {
-      width: 100%;
-      padding: 0;
+    width: 100%;
+    padding: 0;
   }
 
   #monet {
@@ -951,16 +952,38 @@ form button {
     padding: 5% 10%;
   }
 
-  .flex-contact small {
-    font-size: clamp(6px ,5vw, 8px);
-  }
-
   #contact-fullspan {
     flex-wrap: wrap;
   }
 }
 
 @media (max-width: 600px) and (min-width:281px) {
+  /* FONT SIZE START */
+    #flex-header-text h2 {
+      font-size: clamp(15px, 6vw, 30px);
+      line-height: 1.3em;
+    }
+
+    .flex-fullspan-HOME h2, .flex-contact h2, .carousel h2 {
+      font-size: clamp(10px, 10vw, 80px);
+    }
+
+    .flex-fullspan-pages h1 {
+      font-size: clamp(30px, 24vw, 140px);
+    }
+
+    .flex-fullspan-HOME p, .flex-fullspan-pages p, figcaption, .about-bio p {
+      font-size: clamp(10px, 4vw, 11px);
+    }
+
+    #contact-fullspan p {
+      font-size: clamp(12px, 6vw, 14px);
+    }
+
+    .flex-contact small {
+      font-size: clamp(6px ,3vw, 8px);
+    }
+  /* FONT SIZE END */
 
   #flex-header-text {
     padding: 10% 5%;
@@ -1017,6 +1040,33 @@ form button {
 }
 
 @media (max-width: 767px) and (min-width:601px) {
+  /* FONT SIZE START */
+  #flex-header-text h2 {
+    font-size: clamp(15px, 6vw, 30px);
+    line-height: 1.3em;
+  }
+
+  .flex-fullspan-HOME h2, .flex-contact h2, .carousel h2 {
+    font-size: clamp(10px, 12vw, 130px);
+  }
+
+  .flex-fullspan-pages h1 {
+    font-size: clamp(30px, 24vw, 140px);
+  }
+
+  .flex-fullspan-HOME p, .flex-fullspan-pages p, figcaption, .about-bio p {
+    font-size: clamp(18px, 20vw, 24px);
+  }
+
+  #contact-fullspan p {
+    font-size: clamp(18px, 20vw, 24px);
+  }
+
+  .flex-contact small {
+    font-size: clamp(14px ,10vw, 16px);
+  }
+  /* FONT SIZE END */
+
   .navbar {
   display: none;
   }
@@ -1037,14 +1087,6 @@ form button {
 
   .flex-fullspan-HOME {
     padding: 0% 10%;
-  }
-
-  .flex-fullspan-HOME p, .flex-fullspan-pages p, figcaption, .about-bio p {
-    font-size: clamp(18px, 20vw, 24px);
-  }
-
-  .flex-fullspan-HOME h2 {
-    font-size: clamp(10px, 12vw, 130px);
   }
 
   .flex-phone {
@@ -1069,24 +1111,12 @@ form button {
     width: 100%;
   }
 
-  .flex-contact h2, .carousel h2{
-    font-size: clamp(16px, 10vw, 100px);
-  }
-
   .flex-contact img {
     padding: 5% 10%;
   }
 
   #contact-fullspan {
     flex-wrap: wrap;
-  }
-
-  #contact-fullspan p {
-    font-size: clamp(18px, 20vw, 24px);
-  }
-
-  .flex-contact small {
-    font-size: clamp(14px ,10vw, 16px);
   }
 
   .flex-contact {
@@ -1096,19 +1126,14 @@ form button {
 
 /*TABLET*/
 @media (max-width: 1023px) and (min-width:768px) {
-
-  .hamburger-container {
-    display: none;
-  }
-
-  #flex-header-text {
-    width: 100%;
-    padding: 20% 5%;
-  }
-
+  /* FONT SIZE START */
   #flex-header-text h2 {
     font-size: clamp(12px, 10vw, 40px);
     line-height: 1.3em;
+  }
+
+  .flex-contact h2, .carousel h2, .flex-fullspan-HOME h2 {
+    font-size: clamp(50px, 15vw, 70px);
   }
 
   .flex-fullspan-pages h1 {
@@ -1119,25 +1144,31 @@ form button {
     font-size: clamp(16px, 15vw, 18px);
   }
 
+  #contact-fullspan p {
+    font-size: clamp(18px, 20vw, 24px);
+  }
+
+  .flex-contact small {
+    font-size: clamp(12px ,8vw, 14px);
+  }
+  /* FONT SIZE END */
+
+  .hamburger-container {
+    display: none;
+  }
+
+  #flex-header-text {
+    width: 100%;
+    padding: 20% 5%;
+  }
+
   .flex-fullspan-HOME p {
     padding: 0% 1%;
     text-align: left;
   }
 
-  .flex-contact h2, .carousel h2, .flex-fullspan-HOME h2 {
-    font-size: clamp(50px, 15vw, 70px);
-  }
-
-  #contact-fullspan p {
-    font-size: clamp(18px, 20vw, 24px);
-  }
-
   #contact-underline p, .underline {
     text-decoration: underline;
-  }
-
-  .flex-contact small {
-    font-size: clamp(12px ,8vw, 14px);
   }
 
   #flex-header-monet {
@@ -1222,11 +1253,11 @@ form button {
 }
 
 @media (max-width: 1920px) and (max-height:1080px) {
-.flex-fullspan-HOME p, .flex-fullspan-pages p, figcaption, .about-bio p {
-  font-size: clamp(14px, 22vw, 16px);
-  }
+  .flex-fullspan-HOME p, .flex-fullspan-pages p, figcaption, .about-bio p {
+    font-size: clamp(14px, 22vw, 16px);
+    }
 
-.flex-contact small {
-  font-size: clamp(12px ,8vw, 14px);
-}
+  .flex-contact small {
+    font-size: clamp(12px ,8vw, 14px);
+  }
 }
