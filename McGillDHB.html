@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- for Microsoft Apps web thumbnail-->
+  <meta name="msapplications-TitleImage" content="https://i.imgur.com/Toe3gpc.png">
+  <!-- for Facebook & Whatsapp  -->
+  <!-- Site name, Title, and Description to be displayed -->
+  <meta property="og:site_name" content="Robyn Dang Portfolio">
+  <meta property="og:title" content="Robyn Dang Portfolio - Play">
+  <meta property="og:description" content="A collection of work I've made in my free time or for school projects.">
+  <!-- Image to display -->
+  <meta property="og:image" itemprop="image" content="https://i.imgur.com/Toe3gpc.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/png">
+  <!-- Any size up to 300. Anything above 300 will not work in Whatsapp -->
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+  <!-- Website to visit when clicked in Facebook or Whatsapp -->
+  <meta property="og:url" content="https://robyndang.github.io/Portfolio/Play.html">
+
+  <link rel="stylesheet" type="text/css" href="styles/style2.css" />
+  <title>Robyn Dang</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/favicon-07.svg" />
+</head>
+
+<body class="white">
+
+  <!-- !!!!!!!!!!! NAVBAR !!!!!!!!!!--->
+  <navbar>
+    <nav>
+      <ul class="hover">
+        <li><a href="index.html">Work</a>
+          <ul class="dropdown">
+            <li><a href="McGillDHB.html" title="Visualizing Housing Data" class="active">Visualizing Housing Data</a>
+            </li>
+            <li><a href="EWDesignSystem.html" title="Improving Internal Design System">Improving
+                Internal Design
+                System</a></li>
+            <li><a href="Weverse.html" title="Boosting User Engagement">Boosting User Engagement</a>
+            </li>
+            <li><a href="MPY.html" title="Increasing Volunteer Recruitment">Increasing Volunteer Recruitment</a></li>
+          </ul>
+        </li>
+        <li><a href="Play.html" title="Play">Play</a></li>
+        <li><a href="About.html" title="About">About</a></li>
+        <li> <a href="mailto:robyn.lou.dang@gmail.com">Email</a></li>
+      </ul>
+    </nav>
+  </navbar>
+
+  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+  <div class="hamburger-container">
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg"
+        alt="hamburger menu button" /></span>
+  </div>
+
+  <div class="menu-container" id="hamburgermenu">
+    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg"
+        alt="close hamburger menu"></span>
+
+    <div class="menu-column">
+      <div class="menu-item">
+        <a href="index.html" title="work" class="active">
+          <h2>Work</h2>
+        </a>
+      </div>
+
+      <div class="menu-item">
+        <a href="McGillDHB.html" title="Visualizing Housing Data" class="active">
+          <h4>Visualizing Housing Data</h4>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="EWDesignSystem.html" title="Improving Internal Design System" class="active">
+          <h4>Improving Internal Design System</h4>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="Weverse.html" title="Boosting User Engagement" class="active">
+          <h4>Boosting User Engagement</h4>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="MPY.html" title="Increasing Volunteer Recruitment" class="active">
+          <h4>Increasing Volunteer Recruitment</h4>
+        </a>
+      </div>
+
+      <div class="menu-item">
+        <a href="Play.html" title="play">
+          <h2>Play</h2>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="About.html" title="about">
+          <h2>About</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! CONTENT !!!!!!!!!!--->
+  <div class="cs-banner">
+    <img src="img/McGillDHB/MGL-banner.jpg" alt="case study thumbnail" />
+  </div>
+
+  <div class="wrapper">
+    <!-- CASE STUDY SIDE MENU -->
+    <div class="side-menu">
+      <ul class="hover">
+        <li><a href="#Context">Context</a></li>
+        <li><a href="#DiscoverDefine">Discover & Define</a></li>
+        <li><a href="#DevelopDeliver">Develop & Deliver</a></li>
+        <li><a href="#Styleguide">Styleguide</a></li>
+        <li><a href="#Outcomes">Outcomes</a></loveri>
+        <li><a href="#Reflection">Reflection</a></li>
+        <li><a href="#Credits">Credits</a></li>
+      </ul>
+    </div>
+
+    <div class="page-container">
+      <section id="Context">
+        <h1>
+          Visualizing Housing Data
+        </h1>
+        <div class="container-top-align">
+          <div class="col-2">
+            <h2>
+              Context
+            </h2>
+            <p>
+              McGill School of Architecture wanted to visualize housing characteristics, specifically affordability,
+              energy, and carbon, to foster a circular economy. When materials and buildings are used for as long as
+              possible, waste is reduced, and sustainability is achieved creating a circular economy.
+            <p>
+          </div>
+
+          <div class="col-2">
+            <p>
+              <b>Client:</b> McGill School of Architecture <br>
+              <b>Project type:</b> Data visualization website <br>
+              <b>Team:</b> 3 UX/UI Designers (including myself), 1 design lead, 1 homepage art director, 2 PMs, multiple
+              engineers<br>
+              <b>Timeline:</b> 4 months ~ 2022<br>
+            <p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="col-2">
+            <img src="img/placeholder-square.jpg" alt="" />
+          </div>
+
+          <div class="col-2">
+            <h3>
+              The Problem
+            </h3>
+            <p>
+              In order for homebuilders, financiers, and policymakers to make decisions that progress Canada towards a
+              circular economy, robust building data is required. Unfortunately, building data is scattered across
+              industries, lacks standardization, and is difficult to understand.
+            </p>
+            <br>
+            <h3>
+              The Objective
+            </h3>
+            <p>
+              Research, strategize, and design a web experience that provides organized, standardized, and
+              comprehensible data visualizations about Canada’s housing characteristics. Key decision makers will be
+              able to reference building data, and evaluate their own, to forge a sustainable housing future.
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="col-full">
+            <h3>
+              The Process
+            </h3>
+            <div class="col-full">
+              <img src="img/placeholder-landscape.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="DiscoverDefine">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Discover & Define
+            </h2>
+            <p>
+              We gathered and synthesized information from client whitepapers, mockups, and meetings which helped us
+              create a suitable site architecture and structure page content.
+            </p>
+          </div>
+          <div class="col-full">
+            <h3>
+              Personas
+            </h3>
+            <p>
+              Using the documents provided from the client, and findings gathered from a focus group conducted by our
+              UX lead, I created three personas to better understand who we were designing for.
+            </p>
+          </div>
+
+          <!-- <div class="col-full"> -->
+          <div class="carousel">
+            <div class="carousel_track-container">
+              <ul class="carousel_track">
+                <li class="carousel_slide current-slide"><img class="carousel_image" img
+                    src="img/placeholder-landscape.jpg"></li>
+                <li class="carousel_slide"><img class="carousel_image" img src="img/placeholder-landscape.jpg"></li>
+                <li class="carousel_slide"><img class="carousel_image" img src="img/placeholder-landscape.jpg"></li>
+              </ul>
+            </div>
+            <div class="carousel_nav">
+              <div class="carousel_indicators">
+                <button class="carousel_indicator current-slide"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+              </div>
+              <div class="carousel_buttons">
+                <button class="carousel_button carousel_button-left"><img src="img/arrow-left.svg"></button>
+                <button class="carousel_button carousel_button-right"><img src="img/arrow-right.svg"></button>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <div class="col-full">
+            <h3>
+              Goals
+            </h3>
+            <p>
+            <ul>
+              <li>Empower users to make sustainable decisions for their own building projects.</li>
+              <li>Communicate which features are most useful for each user group.</li>
+              <li>Have the website serve as a benchmark for users from three different industries.</li>
+              <li>Make complex data easier to understand, compare, analyze, and share.</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="DevelopDeliver">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Develop & Deliver
+            </h2>
+            <p>
+              Multiple pages were prototyped and delivered, however I’ll only highlight the ones I had a greater hand in
+              creating.
+            </p>
+          </div>
+        </div>
+        <div class="container-top-align">
+          <div class="col-2">
+            <h4>
+              The homepage effectively communicates the website’s purpose and features
+            </h4>
+          </div>
+          <div class="col-2">
+            <p>
+              The mockup from phase 1 was text-heavy, visually underwhelming and lacked CTAs. In phase 2, we use
+              stunning and interactive animations created by myself and another designer to illustrate the capabilities
+              of each feature. Using CTAs and active language, we redirect primary users to the most useful pages for
+              them.
+            </p>
+          </div>
+          <div class="col-full">
+            <img src="img/placeholder-landscape.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="container-top-align">
+          <div class="col-2">
+            <h4>
+              The housing map enables users to see building data at a city, neighbourhood, and property level
+            </h4>
+          </div>
+          <div class="col-2">
+            <p>
+              Key decision makers needed a way to efficiently compare and analyze up-to-date housing data, instead of
+              getting lost in spreadsheets, so data is broken down into scales, tables, and graphs, which makes analysis
+              easier. Depending on the filters applied, granularity of the data changes.
+            </p>
+          </div>
+          <div class="col-full">
+            <img src="img/placeholder-landscape.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="container-top-align">
+          <div class="col-2">
+            <h4>
+              The housing passport presents building-specific data about affordability, energy performance, and carbon
+              performance
+            </h4>
+          </div>
+          <div class="col-2">
+            <p>
+              Using principles of design pertaining to typography, colour, and layout, we designed a housing passport
+              template with a clear hierarchy making the data easy to scan. To avoid walls of text, info icons explain
+              uncommon terminology, and to reduce scrolling, users can navigate to different sections using the sticky
+              navigation bar.
+            </p>
+          </div>
+          <div class="col-full">
+            <img src="img/placeholder-landscape.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="container-top-align">
+          <div class="col-2">
+            <h4>
+              Users can explore building materials and compare their environmental impacts at a glance
+            </h4>
+          </div>
+          <div class="col-2">
+            <p>
+              Instead of aggregating material data from multiple sources across the web, users can quickly compare
+              materials by the standardized ratings displayed on cards, and filters allow users to find alternatives
+              based on use case and material category. Users can even download a spreadsheet of selected materials with
+              the most relevant metrics to share with their team.
+            </p>
+          </div>
+          <div class="col-full">
+            <img src="img/placeholder-landscape.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="container-top-align">
+          <div class="col-2">
+            <h4>
+              Material passports provide detailed data about a material’s impact on health and the environment
+            </h4>
+          </div>
+          <div class="col-2">
+            <p>
+              The page structure follows the same format as the housing passport so users don’t need to relearn a new
+              page layout. To help users find related materials, a carousel at the bottom of the page displays items
+              based on related use case and material category. 
+              <br><br>
+              The client requested a supplier map, which promotes buying materials locally, but budget constraints
+              prevented us from building it. As a solution, we redirect users to prefilled Google Map searches, which
+              offers better search functionality anyway.
+            </p>
+          </div>
+          <div class="col-full">
+            <img src="img/placeholder-landscape.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="container-top-align">
+          <div class="col-2">
+            <h4>
+              With design scenarios, users can design their own buildings
+            </h4>
+          </div>
+          <div class="col-2">
+            <p>
+              Builders can design up to 3 buildings simultaneously using a form and compare them side-by-side to
+              understand their impact on global warming. Edit, delete, and add designs easily for an enjoyable and
+              informative iterative process.
+            </p>
+          </div>
+          <div class="col-full">
+            <img src="img/placeholder-landscape.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="container-top-align">
+          <div class="col-2">
+            <h4>
+              The glossary explains industry-specific terms that may be hard to understand from a web search  
+            </h4>
+          </div>
+          <div class="col-2">
+            <p>
+              The glossary acts as a common point of reference for users from three different industries. The words are
+              displayed in the form of dropdown buttons for effortless page scanning which reduces scrolling and visual
+              overwhelm.
+            </p>
+          </div>
+          <div class="col-full">
+            <img src="img/placeholder-landscape.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="Styleguide">
+        <div class="container">
+          <div class="col-full">
+            <h2> Styleguide</h2>
+            <img src="img/placeholder-landscape.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="Outcomes">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Outcomes
+            </h2>
+            <p>
+              The website hasn’t launched yet, but during prototype testing, primary users unanimously praised the
+              accessibility of the data sources. They found the website's greatest strength to be its dynamic nature, as
+              it customizes data based on user inputs, offering personalized information for their housing projects.
+              Finally, they loved the UI which sets it apart from other data-heavy academic websites.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Reflection">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Reflection
+            </h2>
+            <p>
+              It’s important to handle client expectations early on to stay within budget. The client was ambitious and
+              wanted a lot of features and functionality, but it was our job to explain why we should only design for
+              user needs rather than wants resulting in the most impactful solution.
+            </p>
+          </div>
+        </div>
+        <div class="container hover">
+          <a href="mailto:robyn.lou.dang@gmail.com">In-depth case study available as a presentation
+            😉✉️</a>
+        </div>
+      </section>
+
+      <section id="Credits">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Credits
+            </h2>
+            <p>
+              <b>UX/UI Designers:</b> Robyn Dang (me), Katy Fernandez, Annika Oesar<br>
+              <b>Homepage Art Director:</b> Gregory Maslov <br>
+              <b>Design Lead:</b> Henk van Dijke<br>
+              <b>PM:</b> Marta Tarnavska<br>
+              <b>Technical PMs:</b> Xiway Banh and Olha Davdovych<br>
+              <b>Solutions Architect:</b> Franz Fernandes Vanderlinde<br>
+              <b>Lead Front-End Developer:</b> Diego Castro
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! NEXT CASE STUDY !!!!!!!!!!--->
+  <div class="next-case-study hover">
+    <div class="next-cs-thumbnail">
+      <img src="img/placeholder-landscape.jpg">
+    </div>
+    <a href="EWDesignSystem.html">
+      <h3>
+        Improving Internal Design System
+      </h3>
+    </a>
+    <div class="arrow-icon">
+      <img src="img/arrow.svg" alt="arrow right">
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! CONTACT !!!!!!!!!!--->
+  <div class="flex-contact" id="flex-contact">
+
+    <h1>get in touch</h1>
+
+    <img src="img/contact-04.svg" alt="robyn dang">
+
+    <div id="contact-fullspan" class="hover">
+      <div class="contact-item-3">
+        <a href="mailto:robyn.lou.dang@gmail.com">
+          robyn.lou.dang@gmail.com
+        </a>
+      </div>
+      <div class="contact-item-3">
+        <a href="https://www.linkedin.com/in/robyndang/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
+      <div class="contact-item-3">
+        <a href="" target="_blank">
+          Resume
+        </a>
+      </div>
+    </div>
+
+    <small>©Copyright 2023 Robyn Dang ~ Coded by yours truly</small>
+
+  </div>
+
+  <!--Linking to JavaScript here-->
+  <!-- <script src="scripts/butter.js"></script> -->
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

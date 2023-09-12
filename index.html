@@ -1,221 +1,245 @@
 <!DOCTYPE html>
-<html lang="en"
-xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- for Microsoft Apps -->
+  <!-- for Microsoft Apps -->
   <meta name="msapplications-TitleImage" content="https://i.imgur.com/DO8Z6Ft.png">
-<!-- for Facebook & Whatsapp  -->
-<!-- Site name, Title, and Description to be displayed -->
+  <!-- for Facebook & Whatsapp  -->
+  <!-- Site name, Title, and Description to be displayed -->
   <meta property="og:site_name" content="Robyn Dang Portfolio">
   <meta property="og:title" content="Robyn Dang Portfolio">
   <meta property="og:description" content="Toronto-based product designer finding the human touch in a pixelated world">
-<!-- Image to display -->
-  <meta property="og:image" itemprop="image"
-  content="https://i.imgur.com/DO8Z6Ft.png">
-  <meta property="og:type" content="website"/>
+  <!-- Image to display -->
+  <meta property="og:image" itemprop="image" content="https://i.imgur.com/DO8Z6Ft.png">
+  <meta property="og:type" content="website" />
   <meta property="og:image:type" content="image/png">
-<!-- Any size up to 300. Anything above 300 will not work in Whatsapp -->
+  <!-- Any size up to 300. Anything above 300 will not work in Whatsapp -->
   <meta property="og:image:width" content="1288">
   <meta property="og:image:height" content="674">
-<!-- Website to visit when clicked in Facebook or Whatsapp -->
-<meta property="og:url" content="https://robyndang.github.io/Portfolio/">
+  <!-- Website to visit when clicked in Facebook or Whatsapp -->
+  <meta property="og:url" content="https://robyndang.github.io/Portfolio/">
 
-  <link rel="stylesheet" type="text/css" href="styles/style2.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/style2.css" />
   <title>Robyn Dang</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
-  <link rel="shortcut icon" type="image/svg" href="img/favicon-07.svg"/>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/favicon-07.svg" />
 </head>
+
 <body>
 
-  <!--!!!!!!!!!! NAVBAR FOR LARGE SCREENS !!!!!!!!!!--->
-  <ul class="navbar">
-    <li><a href="About.html" title="About">about</a></li>
-    <li><a href="Play.html" title="Play">play</a></li>
-    <li><a href="#flex-case-studies" title="Work">work</a></li>
-    <li><a href="index.html" title="Home">home</a></li>
-  </ul>
+  <!-- !!!!!!!!!!! NAVBAR !!!!!!!!!!--->
+  <navbar>
+    <nav>
+      <ul class="hover">
+        <li><a href="index.html" class="active">Work</a>
+          <ul class="dropdown">
+            <li><a href="McGillDHB.html" title="Visualizing Housing Data">Visualizing Housing Data</a>
+            </li>
+            <li><a href="EWDesignSystem.html" title="Improving Internal Design System">Improving
+                Internal Design
+                System</a></li>
+            <li><a href="Weverse.html" title="Boosting User Engagement">Boosting User Engagement</a>
+            </li>
+            <li><a href="MPY.html" title="Increasing Volunteer Recruitment">Increasing Volunteer Recruitment</a></li>
+          </ul>
+        </li>
+        <li><a href="Play.html" title="Play">Play</a></li>
+        <li><a href="About.html" title="About">About</a></li>
+        <li> <a href="mailto:robyn.lou.dang@gmail.com">Email</a></li>
+      </ul>
+    </nav>
+  </navbar>
 
   <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
   <div class="hamburger-container">
-    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg" alt="hamburger menu button"/></span>
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg"
+        alt="hamburger menu button" /></span>
   </div>
 
   <div class="menu-container" id="hamburgermenu">
-    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg" alt="close hamburger menu"></span>
+    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg"
+        alt="close hamburger menu"></span>
 
     <div class="menu-column">
       <div class="menu-item">
-        <a href="index.html">
-          <p>home/work</p>
+        <a href="index.html" title="work" class="active">
+          <h2>Work</h2>
         </a>
-        <a href="index.html">
-          <img src="img/circled-15.svg" alt="clicked home"/>
+      </div>
+
+      <div class="menu-item">
+        <a href="McGillDHB.html" title="Visualizing Housing Data" class="active">
+          <h4>Visualizing Housing Data</h4>
         </a>
       </div>
       <div class="menu-item">
-        <a href="Play.html">
-          <p>play</p>
-        </a>
-        <a href="Play.html">
-          <img src="img/circled-15.svg" alt="clicked play"/>
+        <a href="EWDesignSystem.html" title="Improving Internal Design System" class="active">
+          <h4>Improving Internal Design System</h4>
         </a>
       </div>
       <div class="menu-item">
-        <a href="About.html">
-          <p>about</p>
+        <a href="Weverse.html" title="Boosting User Engagement" class="active">
+          <h4>Boosting User Engagement</h4>
         </a>
-        <a href="About.html">
-          <img src="img/circled-15.svg" alt="clicked about"/>
+      </div>
+      <div class="menu-item">
+        <a href="MPY.html" title="Increasing Volunteer Recruitment" class="active">
+          <h4>Increasing Volunteer Recruitment</h4>
+        </a>
+      </div>
+
+      <div class="menu-item">
+        <a href="Play.html" title="play">
+          <h2>Play</h2>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="About.html" title="about">
+          <h2>About</h2>
         </a>
       </div>
     </div>
   </div>
 
-<div id="butter">
+  <div class="home-container">
+    <!-- !!!!!!!!!!! HEADER !!!!!!!!!!--->
+    <div class="header">
+      <div id="flex-header-text">
+        <img src="img/logo-03.svg" alt="Robyn Dang">
+        <h4>Toronto-based product designer finding the human touch in a pixelated world</h4>
+      </div>
 
-<!-- !!!!!!!!!!! HEADER !!!!!!!!!!--->
-<div class="header">
-  <div id="flex-header-text">
-    <img src="img/logo-03.svg" alt="Robyn Dang">
-    <h2>Toronto-based product designer finding the human touch in a pixelated world</h2>
-  </div>
+      <div id="flex-header-monet"
+        alt="Dot version of The Stroll, a painting by Claude Monet. The image is of a woman in a white dress holding a parasol on a sunny day">
+        <div id="monet">
+          <img src="img/claude1-12.svg" data-speed="-3" class="layer">
+          <img src="img/claude2-12.svg" data-speed="0.5" class="layer">
+          <img src="img/claude3-12.svg" data-speed="-1" class="layer">
+          <img src="img/claude4-12.svg" data-speed="3" class="layer">
+          <img src="img/claude5-12.svg" data-speed="-4" class="layer">
+          <img src="img/claude6-12.svg" data-speed="1" class="layer">
+        </div>
 
-  <div id="flex-header-monet" alt="Dot version of The Stroll, a painting by Claude Monet. The image is of a woman in a white dress holding a parasol on a sunny day">
-    <div id="monet">
-      <img src="img/claude1-12.svg" data-speed= "-3" class="layer">
-      <img src="img/claude2-12.svg" data-speed= "0.5" class="layer">
-      <img src="img/claude3-12.svg" data-speed= "-1" class="layer">
-      <img src="img/claude4-12.svg" data-speed= "3" class="layer">
-      <img src="img/claude5-12.svg" data-speed= "-4" class="layer">
-      <img src="img/claude6-12.svg" data-speed= "1" class="layer">
+        <div id="monet-mobile"
+          alt="Dot version of The Stroll, a painting by Claude Monet. The image is of a woman in a white dress holding a parasol on a sunny day">
+          <img src="img/claude-mobile-13.svg" class="layer">
+        </div>
+      </div>
     </div>
 
-    <div id="monet-mobile" alt="Dot version of The Stroll, a painting by Claude Monet. The image is of a woman in a white dress holding a parasol on a sunny day">
-      <img src="img/claude-mobile-13.svg" class="layer">
+
+    <!--!!!!!!!!!! CASE STUDY 1 !!!!!!!!!!--->
+    <div class="flex-case-1">
+
+      <div class="rect-case-1"></div>
+      <div class="flex-fullspan-HOME">
+        <a href="McGillDHB.html">
+          <div class="case-hover">
+            <div class="cs-thumbnail">
+              <img src="img/placeholder-landscape.jpg" alt="project thumbnail" />
+            </div>
+            <h2>Visualizing Housing Data</h2>
+          </div>
+        </a>
+        <p>
+          Designing a web experience that visualizes Canada’s housing characteristics to foster a sustainable future.
+        </p>
+      </div>
     </div>
-  </div>
-  <a name="flex-case-studies"><img id="flex-case-studies" src="img/check-out-cases-02.svg" alt="check out my case studies below"></a>
-</div>
 
+    <!--!!!!!!!!!! CASE STUDY 2 !!!!!!!!!!--->
+    <div class="flex-case-2">
 
-<!--!!!!!!!!!! CASE STUDY 1 !!!!!!!!!!--->
-<div class="flex-case-3">
-
-  <div class="rect-3"></div>
-  <a href="https://www.behance.net/gallery/136875813/Weverse-Redesign-Case-Study" target="_blank"><div class="case-hover">
-    <div class="flex-phone prototype-left">
-      <img src="img/weverse-left.png" alt="Weverse app screen">
+      <div class="rect-case-2"></div>
+      <div class="flex-fullspan-HOME">
+        <a href="EWDesignSystem.html">
+          <div class="case-hover">
+            <div class="cs-thumbnail">
+              <img src="img/placeholder-landscape.jpg" alt="project thumbnail" />
+            </div>
+            <h2>Improving Internal Design System</h2>
+          </div>
+        </a>
+        <p>
+          Improving a design agency's internal design system to increase designer and developer productivity.
+        </p>
+      </div>
     </div>
-    <div class="flex-phone prototype-middle">
-      <video muted autoplay loop>
-        <source src="img/Join_quiz.mp4" type="video/mp4">
-        <img src="img/Join_quiz.png" title="Your browser does not support the <video> tag"/>
-      </video>
+
+    <!--!!!!!!!!!! CASE STUDY 3 !!!!!!!!!!--->
+    <div class="flex-case-3">
+
+      <div class="rect-case-3"></div>
+      <div class="flex-fullspan-HOME">
+        <a href="Weverse.html">
+          <div class="case-hover">
+            <div class="cs-thumbnail">
+              <img src="img/placeholder-landscape.jpg" alt="project thumbnail" />
+            </div>
+            <h2>Boosting User Engagement</h2>
+          </div>
+        </a>
+        <p>
+          Redesigning a mobile app experience to boost user engagement and make Weverse the must-have app for kpop fans.
+        </p>
+      </div>
     </div>
-    <div class="flex-phone prototype-right">
-      <img src="img/weverse-right.png" alt="Weverse app screen">
+
+    <!--!!!!!!!!!! CASE STUDY 4 !!!!!!!!!!--->
+    <div class="flex-case-4">
+
+      <div class="rect-case-4"></div>
+      <div class="flex-fullspan-HOME">
+        <a href="MPY.html">
+          <div class="case-hover">
+            <div class="cs-thumbnail">
+              <img src="img/placeholder-landscape.jpg" alt="project thumbnail" />
+            </div>
+            <h2>Increasing Volunteer Recruitment</h2>
+          </div>
+        </a>
+        <p>
+          Designing a website to convert everyday heroes into the next generation of global peacemakers.
+        </p>
+      </div>
     </div>
-    <div class="flex-fullspan-HOME">
-      <h2>Improving engagement on Weverse</h2>
+
+    <!--!!!!!!!!!! CONTACT !!!!!!!!!!--->
+    <div class="flex-contact" id="flex-contact">
+
+      <h1>get in touch</h1>
+
+      <img src="img/contact-04.svg" alt="robyn dang">
+
+      <div id="contact-fullspan" class="hover">
+        <div class="contact-item-3">
+          <a href="mailto:robyn.lou.dang@gmail.com">
+            robyn.lou.dang@gmail.com
+          </a>
+        </div>
+        <div class="contact-item-3">
+          <a href="https://www.linkedin.com/in/robyndang/" target="_blank">
+            LinkedIn
+          </a>
+        </div>
+        <div class="contact-item-3">
+          <a href="" target="_blank">
+            Resume
+          </a>
+        </div>
+      </div>
+
+      <small>©Copyright 2023 Robyn Dang ~ Coded by yours truly</small>
+
     </div>
-  </div></a>
-  <div class="flex-fullspan-HOME">
-    <p>
-      A global fandom platform that connects artists to fans where members can view exclusive content and participate in community-wide discussions.
-    </p>
-  </div>
-</div>
 
-<!--!!!!!!!!!! CASE STUDY 2 !!!!!!!!!!--->
-<div class="flex-case-1">
+    <!--Linking to JavaScript here-->
+    <!-- <script src="scripts/butter.js"></script> -->
+    <script src="scripts/script.js"></script>
+</body>
 
-  <div class="rect-1"></div>
-  <div class="case-hover">
-    <div class="flex-phone prototype-left">
-      <img src="img/language1.png" alt="language app screen">
-    </div>
-    <div class="flex-phone prototype-middle">
-      <img src="img/language2.png" alt="language app screen">
-    </div>
-    <div class="flex-phone prototype-right">
-      <img src="img/language3.png" alt="language app screen">
-    </div>
-    <div class="flex-fullspan-HOME">
-      <h2>Accessible language app for BPSI</h2>
-    </div>
-  </div>
-
-  <div class="flex-fullspan-HOME">
-    <p>
-      An accessible framework that uses press and drag gestures to make gamified language apps more efficient to navigate for BPSI (Blind and Partially Sighted Individuals). ~ coming soon
-    </p>
-  </div>
-</div>
-
-<!--!!!!!!!!!! CASE STUDY 3 !!!!!!!!!!--->
-<div class="flex-case-2">
-
-  <div class="rect-2"></div>
-  <div class="case-hover">
-    <div class="flex-phone prototype-left">
-      <img src="img/thyme1.png" alt="Thyme app screen">
-    </div>
-    <div class="flex-phone prototype-middle">
-      <video muted autoplay loop>
-        <source src="img/thyme.mp4" type="video/mp4">
-        <img src="img/thyme.png" title="Your browser does not support the <video> tag"/>
-      </video>
-    </div>
-    <div class="flex-phone prototype-right">
-      <img src="img/thyme2.png" alt="Thyme app screen">
-    </div>
-    <div class="flex-fullspan-HOME">
-      <h2>Cooking made easy with Thyme</h2>
-    </div>
-  </div>
-
-  <div class="flex-fullspan-HOME">
-    <p>
-      An app that suggests recipes based on sale items at your local grocery stores. Meal plan and stay on budget effortlessly. ~ coming soon
-    </p>
-  </div>
-</div>
-
-<!--!!!!!!!!!! CONTACT !!!!!!!!!!--->
-<div class="flex-contact" id="flex-contact">
-
-  <h2>get in touch</h2>
-
-  <img src="img/contact-04.svg" alt="robyn dang">
-
-  <div id="contact-fullspan">
-    <div class="contact-item-3">
-      <p>robyn.lou.dang@gmail.com</p>
-    </div>
-    <div class="contact-item-3" id="contact-underline">
-      <a href="https://www.behance.net/robynlouda45bd" target="_blank"><p>Behance</p></a>
-    </div>
-    <div class="contact-item-3" id="contact-underline">
-      <a href="https://www.linkedin.com/in/robyndang/" target="_blank"><p>LinkedIn</p></a>
-    </div>
-  </div>
-
-  <small>©Copyright 2022 Robyn Dang ~ Coded by yours truly</small>
-
-</div>
-
-</div>
-<!-- butter -->
-
-<!--Linking to JavaScript here-->
-  <!-- <script src="scripts/butter.js"></script> -->
-  <script src="scripts/script.js"></script>
-  </body>
-
-  </html>
+</html>

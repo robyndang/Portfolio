@@ -1,208 +1,246 @@
 <!DOCTYPE html>
-<html lang="en"
-xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- for Microsoft Apps -->
-    <meta name="msapplications-TitleImage" content="https://i.imgur.com/Toe3gpc.png">
+  <meta name="msapplications-TitleImage" content="https://i.imgur.com/Toe3gpc.png">
   <!-- for Facebook & Whatsapp  -->
   <!-- Site name, Title, and Description to be displayed -->
-    <meta property="og:site_name" content="Robyn Dang Portfolio">
-    <meta property="og:title" content="Robyn Dang Portfolio - Play">
-    <meta property="og:description" content="A collection of work I've made in my free time or for school projects.">
+  <meta property="og:site_name" content="Robyn Dang Portfolio">
+  <meta property="og:title" content="Robyn Dang Portfolio - Play">
+  <meta property="og:description" content="A collection of work I've made in my free time or for school projects.">
   <!-- Image to display -->
-    <meta property="og:image" itemprop="image"
-    content="https://i.imgur.com/Toe3gpc.png">
-    <meta property="og:type" content="website"/>
-    <meta property="og:image:type" content="image/png">
+  <meta property="og:image" itemprop="image" content="https://i.imgur.com/Toe3gpc.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/png">
   <!-- Any size up to 300. Anything above 300 will not work in Whatsapp -->
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
   <!-- Website to visit when clicked in Facebook or Whatsapp -->
   <meta property="og:url" content="https://robyndang.github.io/Portfolio/Play.html">
 
-  <link rel="stylesheet" type="text/css" href="styles/style2.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/style2.css" />
   <title>Robyn Dang</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
-  <link rel="shortcut icon" type="image/svg" href="img/favicon-07.svg"/>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/favicon-07.svg" />
 </head>
+
 <body>
 
-  <!--!!!!!!!!!! NAVBAR FOR LARGE SCREENS !!!!!!!!!!--->
-  <ul class="navbar">
-    <li><a href="About.html" title="About">about</a></li>
-    <li><a href="Play.html" title="Play">play</a></li>
-    <li><a href="index.html#flex-case-studies" title="Work">work</a></li>
-    <li><a href="index.html" title="Home">home</a></li>
-  </ul>
+  <!-- !!!!!!!!!!! NAVBAR !!!!!!!!!!--->
+  <navbar>
+    <nav>
+      <ul class="hover">
+        <li><a href="index.html">Work</a>
+          <ul class="dropdown">
+            <li><a href="McGillDHB.html" title="Visualizing Housing Data">Visualizing Housing Data</a>
+            </li>
+            <li><a href="EWDesignSystem.html" title="Improving Internal Design System">Improving
+                Internal Design
+                System</a></li>
+            <li><a href="Weverse.html" title="Boosting User Engagement">Boosting User Engagement</a>
+            </li>
+            <li><a href="MPY.html" title="Increasing Volunteer Recruitment">Increasing Volunteer Recruitment</a></li>
+          </ul>
+        </li>
+        <li><a href="Play.html" title="Play" class="active">Play</a></li>
+        <li><a href="About.html" title="About">About</a></li>
+        <li> <a href="mailto:robyn.lou.dang@gmail.com">Email</a></li>
+      </ul>
+    </nav>
+  </navbar>
 
   <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
   <div class="hamburger-container">
-    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg" alt="hamburger menu button"/></span>
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg"
+        alt="hamburger menu button" /></span>
   </div>
 
   <div class="menu-container" id="hamburgermenu">
-    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg" alt="close hamburger menu"></span>
+    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg"
+        alt="close hamburger menu"></span>
 
     <div class="menu-column">
       <div class="menu-item">
-        <a href="index.html">
-          <p>home/work</p>
+        <a href="index.html" title="work" class="active">
+          <h2>Work</h2>
         </a>
-        <a href="index.html">
-          <img src="img/circled-15.svg" alt="clicked home"/>
+      </div>
+
+      <div class="menu-item">
+        <a href="McGillDHB.html" title="Visualizing Housing Data" class="active">
+          <h4>Visualizing Housing Data</h4>
         </a>
       </div>
       <div class="menu-item">
-        <a href="Play.html">
-          <p>play</p>
-        </a>
-        <a href="Play.html">
-          <img src="img/circled-15.svg" alt="clicked play"/>
+        <a href="EWDesignSystem.html" title="Improving Internal Design System" class="active">
+          <h4>Improving Internal Design System</h4>
         </a>
       </div>
       <div class="menu-item">
-        <a href="About.html">
-          <p>about</p>
-        </a>
-        <a href="About.html">
-          <img src="img/circled-15.svg" alt="clicked about"/>
+        <a href="Weverse.html" title="Boosting User Engagement" class="active">
+          <h4>Boosting User Engagement</h4>
         </a>
       </div>
+      <div class="menu-item">
+        <a href="MPY.html" title="Increasing Volunteer Recruitment" class="active">
+          <h4>Increasing Volunteer Recruitment</h4>
+        </a>
+      </div>
+
+      <div class="menu-item">
+        <a href="Play.html" title="play">
+          <h2>Play</h2>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="About.html" title="about">
+          <h2>About</h2>
+        </a>
+      </div>
     </div>
   </div>
 
-<div id="butter">
+  <div id="butter">
 
-<!-- <div class="PLAY-header"> -->
-    <!-- <img id="wheatfield-front" src="img/wheatfield1-08.svg" alt="Van Gogh's painting named Wheat Field with Cypresses" data-speed= "1" class="layer">
-    <img id="wheatfield-back" src="img/wheatfield2-08.svg" alt="Van Gogh's painting named Wheat Field with Cypresses" data-speed= "-2" class="layer"> -->
-<!-- </div> -->
+    <!--!!!!!!!!!! CONTENT !!!!!!!!!!--->
+    <div class="flex-container-pages">
 
-<!--!!!!!!!!!! CONTENT !!!!!!!!!!--->
-  <div class="flex-container-pages">
-
-    <div class="rect-pages"></div>
-
-    <div class="flex-fullspan-pages">
-      <h1>play</h1>
-      <p>
-        A collection of work I've made in my free time or for school projects.
-      <p>
-    </div>
-
-    <div class="flex-item-pages-left">
-      <a href="https://robyndang.github.io/Happiness_A_Practical_Guide/" target="_blank"><img src="img/happiness_site.png" alt="screen capture of website home page">
-      <span class="underline"><figcaption>Happiness: A Practical Guide - HTML, CSS, JS</figcaption></span></a>
-    </div>
-
-    <div class="flex-item-pages-right">
-      <img src="img/queens-gambit.jpg" alt="Beth Harmon from Queen's Gambit practices chess as she bathes in a lavish green hotel bathroom.">
-      <figcaption>The Queen's Gambit - gouache painting</figcaption>
-    </div>
-
-    <div class="flex-item-pages-left">
-      <img src="img/vulnerability.jpg" alt="Digital painting that mimics watercolor of a young man in a winter landscape. His arms stand in the wind as crows pull the yarn from his sweater away leaving him vulnerable. Underneath the sweater is not a body, but branches.">
-      <figcaption>Vulnerability - digital painting</figcaption>
-    </div>
-
-    <div class="flex-item-pages-right">
-      <video muted autoplay loop title="Painting timelapse of a dark angel breaking cupid's arrow">
-        <source src="img/anti-romantic.mp4" type="video/mp4">
-        <source src="img/anti-romantic.ogg" type="video/ogg">
-        <img src="img/anti-romantic.jpg" title="Your browser does not support the <video> tag"/>
-      </video>
-      <figcaption>Anti-romantic - gouache painting</figcaption>
-    </div>
-
-    <div class="flex-item-pages-left">
-      <video muted autoplay loop title="Painting timelapse of two people painting on a cliff overlooking a lake. The poster reads 'Scarborough Bluffs'">
-        <source src="img/scarbbluffs.mp4" type="video/mp4">
-        <source src="img/scarbbluffs.ogg" type="video/ogg">
-        <img src="img/scarbbluffs.jpg" title="Your browser does not support the <video> tag"/>
-      </video>
-      <figcaption>Scarborough Bluffs - digital painting</figcaption>
-    </div>
-
-    <div class="flex-item-pages-right">
-      <img src="img/taehyung.jpg" alt="Taehyung from BTS in a tan suit. He is dramtically half-lit and holding a gold teacup and saucer.">
-      <figcaption>Taehyung Map of the Soul: 7 - oil painting</figcaption>
-    </div>
-
-    <div class="flex-item-pages-left">
-      <img src="img/lastblush.jpg" alt="Line painting on wood canvas of a broken hearted man lying on the ground. A blossom tree grows out of his chest as moss and fungi consume him. ">
-      <figcaption>Last Blush - gouache painting</figcaption>
-    </div>
-
-    <div class="flex-item-pages-right">
-      <img src="img/lamphead.jpg" alt="Picture of a woman with a Tiffany style lamp made of paper on top of her head, only the bottom half of her face is visible.">
-      <figcaption>Observer - paper craft</figcaption>
-    </div>
-
-    <div class="flex-item-pages-left">
-      <img src="img/social.jpg" alt="Flat illustration of a person scrolling through social media and feeling lonely. They're seeing posts of people enjoying a party they weren't invited to.">
-      <figcaption>Untitled - vector art</figcaption>
-    </div>
-
-    <div class="flex-item-pages-right">
-      <img src="img/converse.jpg" alt="Girl skateboarding and tying her brain which is made of shoelaces.">
-      <figcaption>Lace It Up - digital painting</figcaption>
-    </div>
-
-    <div class="flex-item-pages-left">
-      <img src="img/parasite-poster.jpg" alt="A collage style poster for the movie Parasite, a film by Bong Joon Ho. It's made of oil paint and scraps of ripped paper. The bottom half of Ki-woo's face is submerged in water. The basement where he lives with his lower-class family is flooded below.">
-      <figcaption>Parasite - mixed media</figcaption>
-    </div>
-
-    <div class="flex-item-pages-right">
-      <img src="img/intheshed.jpg" alt="Watercolor painting of flowers in pots on a shelf.">
-    <figcaption>Untitled - watercolor painting</figcaption>
-    </div>
-
-    <div class="flex-item-pages-left">
-      <video muted autoplay loop title="Motion design animation for the art movements Art Deco, Brutalism, Contemporary Art and De Stilj.">
-        <source src="img/A3_FINAL.mp4" type="video/mp4">
-        <img src="img/A3_FINAL.gif" title="Your browser does not support the <video> tag"/>
-      </video>
-      <figcaption>The ABCDs of Art Movements - motion design</figcaption>
-    </div>
-
-  </div>
-
-  <!--!!!!!!!!!! CONTACT !!!!!!!!!!--->
-  <div class="flex-contact">
-
-    <h2>get in touch</h2>
-
-    <img src="img/contact-04.svg" alt="robyn dang">
-
-    <div id="contact-fullspan">
-      <div class="contact-item-3">
-        <p>robyn.lou.dang@gmail.com</p>
+      <div class="rect-pages"></div>
+      <div class="flex-fullspan-pages">
+        <h1>Play</h1>
+        <p>
+          A collection of personal projects.
+        </p>
       </div>
-      <div class="contact-item-3" id="contact-underline">
-        <a href="https://www.behance.net/robynlouda45bd" target="_blank"><p>Behance</p></a>
+
+      <div class="flex-item-pages-left">
+        <a href="https://robyndang.github.io/Happiness_A_Practical_Guide/" target="_blank"><img
+            src="img/happiness_site.png" alt="screen capture of website home page">
+          <p class="hover">
+            Happiness: A Practical Guide - HTML, CSS, JS
+          </p>
+        </a>
       </div>
-      <div class="contact-item-3" id="contact-underline">
-        <a href="https://www.linkedin.com/in/robyndang/" target="_blank"><p>LinkedIn</p></a>
+
+      <div class="flex-item-pages-right">
+        <img src="img/queens-gambit.jpg"
+          alt="Beth Harmon from Queen's Gambit practices chess as she bathes in a lavish green hotel bathroom.">
+        <p>The Queen's Gambit - gouache painting</p>
       </div>
+
+      <div class="flex-item-pages-left">
+        <img src="img/vulnerability.jpg"
+          alt="Digital painting that mimics watercolor of a young man in a winter landscape. His arms stand in the wind as crows pull the yarn from his sweater away leaving him vulnerable. Underneath the sweater is not a body, but branches.">
+        <p>Vulnerability - digital painting</p>
+      </div>
+
+      <div class="flex-item-pages-right">
+        <video muted autoplay loop title="Painting timelapse of a dark angel breaking cupid's arrow">
+          <source src="img/anti-romantic.mp4" type="video/mp4">
+          <source src="img/anti-romantic.ogg" type="video/ogg">
+          <img src="img/anti-romantic.jpg" title="Your browser does not support the <video> tag" />
+        </video>
+        <p>Anti-Romantic - gouache painting</p>
+      </div>
+
+      <div class="flex-item-pages-left">
+        <video muted autoplay loop
+          title="Painting timelapse of two people painting on a cliff overlooking a lake. The poster reads 'Scarborough Bluffs'">
+          <source src="img/scarbbluffs.mp4" type="video/mp4">
+          <source src="img/scarbbluffs.ogg" type="video/ogg">
+          <img src="img/scarbbluffs.jpg" title="Your browser does not support the <video> tag" />
+        </video>
+        <p>Scarborough Bluffs - digital painting</p>
+      </div>
+
+      <div class="flex-item-pages-right">
+        <img src="img/taehyung.jpg"
+          alt="Taehyung from BTS in a tan suit. He is dramtically half-lit and holding a gold teacup and saucer.">
+        <p>Taehyung Map of the Soul: 7 - oil painting</p>
+      </div>
+
+      <div class="flex-item-pages-left">
+        <img src="img/lastblush.jpg"
+          alt="Line painting on wood canvas of a broken hearted man lying on the ground. A blossom tree grows out of his chest as moss and fungi consume him. ">
+        <p>Last Blush - gouache painting</p>
+      </div>
+
+      <div class="flex-item-pages-right">
+        <img src="img/lamphead.jpg"
+          alt="Picture of a woman with a Tiffany style lamp made of paper on top of her head, only the bottom half of her face is visible.">
+        <p>Observer - paper craft</p>
+      </div>
+
+      <div class="flex-item-pages-left">
+        <img src="img/social.jpg"
+          alt="Flat illustration of a person scrolling through social media and feeling lonely. They're seeing posts of people enjoying a party they weren't invited to.">
+        <p>FOMO - vector art</p>
+      </div>
+
+      <div class="flex-item-pages-right">
+        <img src="img/converse.jpg" alt="Girl skateboarding and tying her brain which is made of shoelaces.">
+        <p>Lace It Up - digital painting</p>
+      </div>
+
+      <div class="flex-item-pages-left">
+        <img src="img/parasite-poster.jpg"
+          alt="A collage style poster for the movie Parasite, a film by Bong Joon Ho. It's made of oil paint and scraps of ripped paper. The bottom half of Ki-woo's face is submerged in water. The basement where he lives with his lower-class family is flooded below.">
+        <p>Parasite - mixed media</p>
+      </div>
+
+      <div class="flex-item-pages-right">
+        <img src="img/intheshed.jpg" alt="Watercolor painting of flowers in pots on a shelf.">
+        <p>The Potting Shed At Dawn - watercolor painting</p>
+      </div>
+
+      <div class="flex-item-pages-left">
+        <video muted autoplay loop
+          title="Motion design animation for the art movements Art Deco, Brutalism, Contemporary Art and De Stilj.">
+          <source src="img/A3_FINAL.mp4" type="video/mp4">
+          <img src="img/A3_FINAL.gif" title="Your browser does not support the <video> tag" />
+        </video>
+        <p>The ABCDs of Art Movements - motion design</p>
+      </div>
+
     </div>
 
-    <small>©Copyright 2022 Robyn Dang ~ Coded by yours truly</small>
+    <!--!!!!!!!!!! CONTACT !!!!!!!!!!--->
+    <div class="flex-contact" id="flex-contact">
 
-  </div>
+      <h1>get in touch</h1>
 
-</div>
-<!-- butter -->
+      <img src="img/contact-04.svg" alt="robyn dang">
 
-<!--Linking to JavaScript here-->
-<!-- <script src="scripts/butter.js"></script> -->
-<script src="scripts/script.js"></script>
+      <div id="contact-fullspan" class="hover">
+        <div class="contact-item-3">
+          <a href="mailto:robyn.lou.dang@gmail.com">
+            robyn.lou.dang@gmail.com
+          </a>
+        </div>
+        <div class="contact-item-3">
+          <a href="https://www.linkedin.com/in/robyndang/" target="_blank">
+            LinkedIn
+          </a>
+        </div>
+        <div class="contact-item-3">
+          <a href="" target="_blank">
+            Resume
+          </a>
+        </div>
+      </div>
+
+      <small>©Copyright 2023 Robyn Dang ~ Coded by yours truly</small>
+
+    </div>
+
+    <!--Linking to JavaScript here-->
+    <!-- <script src="scripts/butter.js"></script> -->
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

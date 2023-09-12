@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- for Microsoft Apps web thumbnail-->
+  <meta name="msapplications-TitleImage" content="https://i.imgur.com/Toe3gpc.png">
+  <!-- for Facebook & Whatsapp  -->
+  <!-- Site name, Title, and Description to be displayed -->
+  <meta property="og:site_name" content="Robyn Dang Portfolio">
+  <meta property="og:title" content="Robyn Dang Portfolio - Play">
+  <meta property="og:description" content="A collection of work I've made in my free time or for school projects.">
+  <!-- Image to display -->
+  <meta property="og:image" itemprop="image" content="https://i.imgur.com/Toe3gpc.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/png">
+  <!-- Any size up to 300. Anything above 300 will not work in Whatsapp -->
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+  <!-- Website to visit when clicked in Facebook or Whatsapp -->
+  <meta property="og:url" content="https://robyndang.github.io/Portfolio/Play.html">
+
+  <link rel="stylesheet" type="text/css" href="styles/style2.css" />
+  <title>Robyn Dang</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/favicon-07.svg" />
+</head>
+
+<body class="white">
+
+  <!-- !!!!!!!!!!! NAVBAR !!!!!!!!!!--->
+  <navbar>
+    <nav>
+      <ul class="hover">
+        <li><a href="index.html">Work</a>
+          <ul class="dropdown">
+            <li><a href="McGillDHB.html" title="Visualizing Housing Data">Visualizing Housing Data</a>
+            </li>
+            <li><a href="EWDesignSystem.html" title="Improving Internal Design System">Improving
+                Internal Design
+                System</a></li>
+            <li><a href="Weverse.html" title="Boosting User Engagement">Boosting User Engagement</a>
+            </li>
+            <li><a href="MPY.html" title="Increasing Volunteer Recruitment" class="active">Increasing Volunteer
+                Recruitment</a></li>
+          </ul>
+        </li>
+        <li><a href="Play.html" title="Play">Play</a></li>
+        <li><a href="About.html" title="About">About</a></li>
+        <li> <a href="mailto:robyn.lou.dang@gmail.com">Email</a></li>
+      </ul>
+    </nav>
+  </navbar>
+
+  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+  <div class="hamburger-container">
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg"
+        alt="hamburger menu button" /></span>
+  </div>
+
+  <div class="menu-container" id="hamburgermenu">
+    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg"
+        alt="close hamburger menu"></span>
+
+    <div class="menu-column">
+      <div class="menu-item">
+        <a href="index.html" title="work" class="active">
+          <h2>Work</h2>
+        </a>
+      </div>
+
+      <div class="menu-item">
+        <a href="McGillDHB.html" title="Visualizing Housing Data" class="active">
+          <h4>Visualizing Housing Data</h4>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="EWDesignSystem.html" title="Improving Internal Design System" class="active">
+          <h4>Improving Internal Design System</h4>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="Weverse.html" title="Boosting User Engagement" class="active">
+          <h4>Boosting User Engagement</h4>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="MPY.html" title="Increasing Volunteer Recruitment" class="active">
+          <h4>Increasing Volunteer Recruitment</h4>
+        </a>
+      </div>
+
+      <div class="menu-item">
+        <a href="Play.html" title="play">
+          <h2>Play</h2>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="About.html" title="about">
+          <h2>About</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! CONTENT !!!!!!!!!!--->
+  <img src="img/placeholder-banner.jpg" alt="case study thumbnail" />
+
+  <div class="wrapper">
+    <!-- CASE STUDY SIDE MENU -->
+    <div class="side-menu">
+      <ul class="hover">
+        <li><a href="#Context">Context</a></li>
+        <li><a href="#Empathize">Empathize</a></li>
+        <li><a href="#Conceptualize">Conceptualize</a></li>
+        <li><a href="#Design">Design</a></li>
+        <li><a href="#Deliver">Deliver</a></li>
+        <li><a href="#Styleguide">Styleguide</a></li>
+        <li><a href="#Outcomes">Outcomes</a></loveri>
+        <li><a href="#Reflection">Reflection</a></li>
+        <li><a href="#Credits">Credits</a></li>
+      </ul>
+    </div>
+
+    <div class="page-container">
+      <section id="Context">
+        <h1>
+          Increasing Volunteer Recruitment
+        </h1>
+        <div class="container-top-align">
+          <div class="col-2">
+            <h2>
+              Context
+            </h2>
+            <p>
+              Million Peacemakers (MP) is a non-profit organization that trains people on how to peacefully resolve
+              conflicts using the Nonflict way. Their recent focus has been their sub-organization, Million Peacemakers
+              Youth (MPY), which focuses on training young adults specifically.
+            <p>
+          </div>
+
+          <div class="col-2">
+            <p>
+              <b>Client:</b> Million Peacemakers<br>
+              <b>Project type:</b> Non-profit landing page<br>
+              <b>Team:</b> 2 UX/UI Designers (including myself), WIX developer (me), Art Director, Design Lead<br>
+              <b>Timeline:</b> 8 weeks ~ Q4 2022<br>
+            <p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="col-2">
+            <img src="img/placeholder-square.jpg" alt="" />
+          </div>
+
+          <div class="col-2">
+            <h3>
+              The Problem
+            </h3>
+            <p>
+              Million Peacemakers didn’t have a dedicated place to promote their growing sub-organization, MPY. Since
+              they couldn’t find the information they needed, potential youth volunteers left the website without
+              joining the cause.
+            </p>
+            <br>
+            <h3>
+              The Objective
+            </h3>
+            <p>
+              Research, strategize, and design an experience to help young adults understand the Nonflict way, and the
+              benefits of joining MPY, converting them to youth volunteers and workshop participants.
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="col-full">
+            <h3>
+              The Process
+            </h3>
+            <div class="col-full">
+              <img src="img/placeholder-landscape.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Empathize">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Empathize
+            </h2>
+            <p>
+              We lacked understanding about MP’s needs and users, and without a budget for user research, we surveyed
+              the client to uncover who their key audiences are and what their goals are for the coming years.
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="col-2">
+            <img src="img/placeholder-square.jpg">
+          </div>
+          <div class="col-2">
+            <h3>
+              Client Goals
+            </h3>
+            <ul>
+              <li>Recruit more youth volunteers to help run their increasing number of workshops.</li>
+              <li>Multiply participation in youth workshops.</li>
+              <li>Create exposure, traffic, and momentum for Million Peacemakers Youth.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="Conceptualize">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Conceptualize
+            </h2>
+            <p>
+              After benchmarking landing page structures of popular non-profit websites, we decided to inspire youth to
+              volunteer by positioning them as heroes. The page structure was presented as a hero’s journey
+              strategically incorporating social proof, genuine imagery, and approachable calls-to-action.
+            </p>
+            <img src="img/placeholder-landscape.jpg">
+          </div>
+        </div>
+      </section>
+
+      <section id="Design">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Design
+            </h2>
+            <p>
+              With an 8 week timeline, we had to work fast to sell the client on our concept, reducing rounds of
+              feedback and preventing any delays in delivery. We created a stylescape—a collaged mood board of
+              sorts—which presented colours, website elements, icons, and photography as a holistic vision for the
+              client to greenlight before moving onto a mock-up.
+            </p>
+            <img src="img/placeholder-landscape.jpg">
+          </div>
+        </div>
+      </section>
+
+      <section id="Deliver">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Deliver
+            </h2>
+            <p>
+              Without a budget for developers, we took this as an opportunity to maximize the capabilities of design and
+              upskill by learning how to use a site builder. Additionally, the new visual identity had to be
+              transferable to their main site, and sustainable after handoff, so I worked in WIX to implement a
+              responsive design with transferable components.
+            </p>
+          </div>
+          <div class="col-full">
+            <h4>
+              Eye-catching Hero 
+            </h4>
+            <p>
+              The flowing line draws a user’s attention from the headline to the captivating image of a young
+              volunteer.
+            </p>
+            <img src="img/placeholder-landscape.jpg">
+          </div>
+          <div class="col-full">
+            <h4>
+              Short and Sweet Breakdowns 
+            </h4>
+            <p>
+              To prevent overwhelming users, important information about MPY’s culture, method of conflict resolution,
+              impact, and benefits of joining are broken down into easily digestible sections.
+            </p>
+            <img src="img/placeholder-landscape.jpg">
+          </div>
+          <div class="col-full">
+            <h4>
+              Persuading With Social Proof
+            </h4>
+            <p>
+              Testimonials and youth stories are front and center to inspire site visitors while giving them an idea
+              of
+              what to expect from volunteering.
+            </p>
+            <img src="img/placeholder-landscape.jpg">
+          </div>
+          <div class="col-full">
+            <h4>
+              Approachable Calls-To-Action
+            </h4>
+            <p>
+              We start with low commitment CTAs to build up to the main CTA, which asks users to become a youth
+              volunteer. A distinct blue section further down the page highlights the benefits of joining, but the CTA
+              button is also in the navigation menu for easy access at all times.
+            </p>
+            <img src="img/placeholder-landscape.jpg">
+          </div>
+          <div class="col-full">
+            <h4>
+              Opportunities to Engage
+            </h4>
+            <p>
+              The client emphasized that the contact form generated numerous opportunities on their main site, so it
+              was
+              crucial to include it on the youth site too.
+            </p>
+            <img src="img/placeholder-landscape.jpg">
+          </div>
+          <div class="col-full">
+            <h4>
+              Sustainable Rebranding
+            </h4>
+            <p>
+              Considering MP’s swift expansion, the overly branded images were deemed unsustainable. In the future,
+              they
+              may take photographs of events and volunteers so the new stock images were chosen for their
+              authenticity—as if their team had taken it themselves.
+            </p>
+            <img src="img/placeholder-landscape.jpg">
+          </div>
+        </div>
+      </section>
+
+      <section id="Styleguide">
+        <div class="container">
+          <div class="col-full">
+            <h2> Styleguide</h2>
+            <p>
+              The components I created in WIX are easy to use, customize, and transfer, empowering the client to
+              continue building autonomously. MP has already rebranded their main site and social media accordingly.
+            </p>
+            <img src="img/placeholder-landscape.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="Outcomes">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Outcomes
+            </h2>
+            <p>
+              The site was launched in January of 2023, so the impact has yet to be measured, but here’s feedback from
+              our clients.
+            </p>
+            <h4>
+              “Their professionalism, passion and creativity made it such a pleasure to co-create with them and the end
+              results exceeded all expectations.”
+            </h4>
+            <p>
+              - Stephen Hecht (Founder)
+            </p>
+            <h4>
+              “We’re pleased with not only the quality of work, but how you delivered it. You under-promised and
+              over-delivered, and you did it with kindness and heart. Thank you on behalf of our team.”
+            </h4>
+            <p>
+              - Jonathan Moyal (Board Member)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Reflection">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Reflection
+            </h2>
+            <p>
+              “An educated assumption is still a valid reason.” That’s what my UX lead said to me when I asked how I
+              should justify design decisions without a budget to conduct research with primary users. The constraint
+              compelled me to be resourceful by benchmarking existing non-profit websites and making the most of
+              information provided by the client.
+            </p>
+          </div>
+        </div>
+        <div class="container hover">
+          <a href="mailto:robyn.lou.dang@gmail.com">In-depth case study available as a presentation
+            😉✉️</a>
+        </div>
+      </section>
+
+      <section id="Credits">
+        <div class="container">
+          <div class="col-full">
+            <h2>
+              Credits
+            </h2>
+            <p>
+              <b>UX/UI Designers:</b> Robyn Dang (me), Elena Rodriguez<br>
+              <b>Wix Developer:</b> Robyn Dang<br>
+              <b>Art Director:</b> Gregory Maslov<br>
+              <b>Design Lead:</b> Henk van Dijke<br>
+              <b>Content Strategist:</b> Kate Bundy<br>
+              <b>PM:</b> Olha Davdovych<br>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! NEXT CASE STUDY !!!!!!!!!!--->
+  <div class="next-case-study hover">
+    <div class="next-cs-thumbnail">
+      <img src="img/placeholder-landscape.jpg">
+    </div>
+    <a href="McGillDHB.html">
+      <h3>
+        Visualizing Housing Data
+      </h3>
+    </a>
+    <div class="arrow-icon">
+      <img src="img/arrow.svg" alt="arrow right">
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! CONTACT !!!!!!!!!!--->
+  <div class="flex-contact" id="flex-contact">
+
+    <h1>get in touch</h1>
+
+    <img src="img/contact-04.svg" alt="robyn dang">
+
+    <div id="contact-fullspan" class="hover">
+      <div class="contact-item-3">
+        <a href="mailto:robyn.lou.dang@gmail.com">
+          robyn.lou.dang@gmail.com
+        </a>
+      </div>
+      <div class="contact-item-3">
+        <a href="https://www.linkedin.com/in/robyndang/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
+      <div class="contact-item-3">
+        <a href="" target="_blank">
+          Resume
+        </a>
+      </div>
+    </div>
+
+    <small>©Copyright 2023 Robyn Dang ~ Coded by yours truly</small>
+
+  </div>
+
+
+  <!--Linking to JavaScript here-->
+  <!-- <script src="scripts/butter.js"></script> -->
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
