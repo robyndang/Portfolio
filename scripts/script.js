@@ -237,8 +237,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 //CAROUSEL 
-// Full JavaScript code
-
 const track = document.querySelector(".carousel_track");
 const slides = Array.from(track.children);
 const nextButton = document.querySelector(".carousel_button-right");
@@ -326,9 +324,6 @@ dotsNav.addEventListener("click", (e) => {
   updateDots(currentDot, targetDot);
   toggleLeftButtonVisibility();
 });
-
-
-
 
 
 

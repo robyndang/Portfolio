@@ -491,7 +491,6 @@ navbar.fade-out {
   height: 100%;
   position: relative;
   overflow: hidden;
-  padding: 0 56px;
 }
 
 .carousel_track {
@@ -508,14 +507,13 @@ navbar.fade-out {
   top: 0;
   bottom: 0;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 
 .carousel_buttons {
   position: absolute;
   right: 0;
-  bottom: 0;
-  transform: translateY(-50%);
+  align-items: center;
 }
 
 .carousel_button {
@@ -531,7 +529,7 @@ navbar.fade-out {
 
 .carousel_nav {
   display: flex;
-  padding: 0;
+  padding: 16px 0;
   /* background: lightpink; */
   align-items: center;
   justify-content: center;
@@ -1057,30 +1055,7 @@ navbar.fade-out {
 
   /*carousel*/
   .carousel {
-    height: 30vh;
-    padding: 16px 0 32px 0;
-  }
-
-  .carousel_track-container {
-    padding: 0px;
-  }
-
-  .carousel_slide {
-    padding: 0px;
-  }
-
-  .carousel_buttons {
     display: none;
-  }
-
-  .carousel_nav {
-    padding: 12px 0;
-  }
-
-  .carousel_indicator {
-    width: 8px;
-    height: 12px;
-    margin: 0 8px;
   }
 }
 
@@ -1251,6 +1226,10 @@ navbar.fade-out {
     width: 48px;
     margin-left: 16px;
   }
+
+  .carousel {
+    display: none;
+  }
 }
 
 /*TABLET*/
@@ -1374,6 +1353,10 @@ navbar.fade-out {
     width: 48px;
     margin-left: 16px;
   }
+
+  .carousel {
+    display: none;
+  }
 }
 
 /*DESKTOP*/
@@ -1388,6 +1371,10 @@ navbar.fade-out {
 
   /*homepage*/
   #monet-mobile {
+    display: none;
+  }
+
+  .carousel_mobile {
     display: none;
   }
 }
@@ -1442,5 +1429,9 @@ navbar.fade-out {
 
   .flex-contact img {
     padding: 0% 30%;
+  }
+
+  .carousel_mobile {
+    display: none;
   }
 }
