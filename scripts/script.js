@@ -136,7 +136,7 @@ if (workLink) {
 
 /*HOVER EFFECT FOR LINKS*/
 // Get all <a> elements inside <ul> with class "hover" and <a> elements in the dropdown menu
-const elements = document.querySelectorAll("ul.hover a, div.hover a, div.hover h3");
+const elements = document.querySelectorAll("ul.hover a, div.hover a, div.hover h3, .flex-item-pages-left p.hover");
 
 // Attach event listeners to each element
 elements.forEach(element => {
@@ -324,7 +324,5 @@ dotsNav.addEventListener("click", (e) => {
   updateDots(currentDot, targetDot);
   toggleLeftButtonVisibility();
 });
-
-
 
 
