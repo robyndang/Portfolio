@@ -325,8 +325,8 @@ navbar.fade-out {
 
 .menu-icon img,
 .closebtn img {
-  width: clamp(30px, 5vw, 45px);
-  height: clamp(30px, 5vw, 45px);
+  width: clamp(60px, 15vw, 80px);
+  height: clamp(60px, 15vw, 80px);
 }
 
 .closebtn {
