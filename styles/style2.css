@@ -442,8 +442,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* padding-top: clamp(12px, 5vw, 16px);
-  padding-bottom: clamp(12px, 5vw, 16px); */
+  padding-bottom: clamp(16px, 10vw, 20px);
   align-items: center;
 }
 
@@ -451,8 +450,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* padding-top: clamp(12px, 5vw, 16px);
-  padding-bottom: clamp(12px, 5vw, 16px); */
+  padding-bottom: clamp(16px, 10vw, 20px);
 }
 
 .col-2,
@@ -1045,7 +1043,7 @@ section {
 
   .col-full,
   .col-2 {
-    padding: 12px 0px;
+    padding: 8px 0px;
   }
 
   /*next case study*/
