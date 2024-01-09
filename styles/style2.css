@@ -314,19 +314,22 @@ navbar.fade-out {
 }
 
 /* HAMBURGER MENU FOR MOBILE*/
-.hamburger-container .menu-icon {
+.hamburger-container,
+.menu-icon {
   position: fixed;
   top: clamp(12px, 5vw, 36px);
   right: clamp(16px, 5vw, 48px);
   cursor: pointer;
   z-index: 1000;
   overflow: hidden;
+  border-radius: 100px;
 }
 
 .menu-icon img,
 .closebtn img {
   width: clamp(60px, 15vw, 80px);
   height: clamp(60px, 15vw, 80px);
+  border-radius: 100px;
 }
 
 .closebtn {
@@ -363,8 +366,7 @@ navbar.fade-out {
   padding: 30% 0;
 }
 
-.menu-item h2,
-.menu-item h4 {
+.menu-item h2 {
   font-family: 'NewYork', serif;
   text-decoration: none;
   color: rgba(0, 142, 83, 1);
@@ -473,7 +475,6 @@ section {
 #flex-header-text img,
 #flex-header-monet img,
 .flex-contact img,
-.hamburger-container img,
 .menu-container img {
   border-radius: 0;
   box-shadow: none;
