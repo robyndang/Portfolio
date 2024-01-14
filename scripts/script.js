@@ -47,15 +47,26 @@ window.onscroll = function () {
 
 /* PARALLAX BACKGROUND */
 document.addEventListener("mousemove", parallax);
+
 function parallax(e) {
-  this.querySelectorAll('.layer').forEach(layer => {
-    const speed = layer.getAttribute('data-speed')
+  // Get the position of the "Email" link
+  const emailLink = document.querySelector('li a[href="mailto:robyn.lou.dang@gmail.com"]');
+  const emailLinkRect = emailLink.getBoundingClientRect();
+  const emailLinkX = emailLinkRect.left + emailLinkRect.width / 2;
+  const emailLinkY = emailLinkRect.top + emailLinkRect.height / 2;
 
-    const x = (window.innerWidth - e.pageX * speed) / 100
-    const y = (window.innerHeight - e.pageY * speed) / 100
+  this.querySelectorAll('#monet .layer').forEach(layer => {
+    const speed = parseFloat(layer.getAttribute('data-speed'));
 
-    layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-  })
+    // Calculate the X translation based on the cursor position relative to the "Email" link
+    const x = (emailLinkX - e.pageX) * speed / 100;
+
+    // Calculate the Y translation based on the cursor position relative to the "Email" link
+    const y = (emailLinkY - e.pageY) * speed / 100;
+
+    // Apply translations on the X and Y axes only for the images inside the #monet div
+    layer.style.transform = `translate(${x}px, ${y}px)`;
+  });
 }
 
 /*ENLARGE HAPPINESS WEBSITE THUMBNAIL ON HOVER*/
