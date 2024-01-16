@@ -1068,7 +1068,7 @@ section {
 }
 
 /*TABLET*/
-@media (max-width: 1023px) and (min-width: 769px) {
+@media (max-width: 1023px) and (min-width: 481px) {
 
   img,
   iframe,
@@ -1083,7 +1083,7 @@ section {
   }
 
   #flex-header-monet {
-    width: 50%;
+    width: 100%;
   }
 
   .header {
@@ -1091,7 +1091,7 @@ section {
   }
 
   #flex-header-text {
-    width: 50%;
+    width: 100%;
     padding: 22px 0 24px 0;
   }
 
