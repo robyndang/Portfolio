@@ -295,7 +295,7 @@ navbar nav ul li a {
   text-transform: none;
 
   height: auto;
-  display: inline-block;
+  display: inline;
   white-space: nowrap;
 }
 
@@ -417,7 +417,7 @@ navbar.fade-out {
 }
 
 .side-menu a {
-  display: block;
+  display: inline;
   text-decoration: none;
   font-family: 'DMSans-Regular', san-serif;
   color: rgba(46, 56, 52, 0.75);
@@ -751,7 +751,9 @@ section {
 }
 
 .flex-item-pages-left p,
-.flex-item-pages-right p {
+.flex-item-pages-right p,
+.flex-item-pages-left a,
+.flex-item-pages-right a {
   font-weight: 400;
   font-style: italic;
   text-align: center;

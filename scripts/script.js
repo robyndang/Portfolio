@@ -71,18 +71,55 @@ function parallax(e) {
 
 /*ENLARGE HAPPINESS WEBSITE THUMBNAIL ON HOVER*/
 document.addEventListener("DOMContentLoaded", function () {
-  var image = document.querySelector(".flex-item-pages-left img");
+  var container = document.querySelector(".flex-item-pages-left");
+  var image = container.querySelector("img");
+  var paragraph = container.querySelector("p"); // Corrected the selector
 
-  image.addEventListener("mouseover", function () {
-    this.style.transition = "transform 0.4s ease";
-    this.style.transform = "scale(1.05)";
+  // Add event listener for mouseenter (hover)
+  container.addEventListener("mouseenter", function () {
+    // Enlarge the image
+    image.style.transition = "transform 0.4s ease";
+    image.style.transform = "scale(1.02)";
+
+    // Check if the <p> element exists
+    if (paragraph) {
+      // Create a pseudo-element for the underline effect
+      const underline = document.createElement("span");
+      underline.style.position = "absolute";
+      underline.style.bottom = "0";
+      underline.style.left = "0";
+      underline.style.width = "100%"; // Set initial width to 100%
+      underline.style.height = "1px"; // Adjust the height value as desired
+      underline.style.backgroundColor = "rgb(40, 42, 43)";
+      underline.style.transform = "scaleX(0)"; // Set initial width to 0
+      underline.style.transformOrigin = "left"; // Set the transform origin to the left
+      underline.style.transition = "transform 0.4s";
+      paragraph.style.position = "relative"; // Set the position to the <p> element
+      paragraph.style.overflow = "hidden";
+      paragraph.appendChild(underline);
+
+      // Set the width of the underline to match the content width
+      setTimeout(() => {
+        underline.style.transform = "scaleX(1)"; // Set width to 100%
+      }, 0);
+    }
   });
 
-  image.addEventListener("mouseout", function () {
-    this.style.transition = "transform 0.4s ease";
-    this.style.transform = "scale(1)";
+  // Add event listener for mouseleave (hover off)
+  container.addEventListener("mouseleave", function () {
+    // Reset the image size
+    image.style.transition = "transform 0.4s ease";
+    image.style.transform = "scale(1)";
+
+    // Remove the underline pseudo-element
+    const underline = paragraph ? paragraph.querySelector("span") : null;
+    if (underline) {
+      paragraph.removeChild(underline);
+    }
   });
 });
+
+
 
 // /*CASE-HOVER EFFECT*/
 const caseHoverElements = document.querySelectorAll('.case-hover');
@@ -147,7 +184,7 @@ if (workLink) {
 
 /*HOVER EFFECT FOR LINKS*/
 // Get all <a> elements inside <ul> with class "hover" and <a> elements in the dropdown menu
-const elements = document.querySelectorAll("ul.hover a, div.hover a, div.hover h3, .flex-item-pages-left p.hover");
+const elements = document.querySelectorAll("ul.hover a, div.hover a, div.hover h3");
 
 // Attach event listeners to each element
 elements.forEach(element => {
