@@ -100,11 +100,14 @@
 h1,
 h2,
 h3,
-h4,
+h4 {
+  padding: 0.5em 0;
+}
+
 p,
 small,
 li {
-  padding: 0.5em 0;
+  padding: 0.4em 0;
 }
 
 h1,
@@ -393,14 +396,13 @@ navbar.fade-out {
 .side-menu {
   position: sticky;
   top: 0;
-  width: 10%;
+  width: 15%;
   height: 100vh;
   background-color: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-left: 3%;
+  align-items: left;
 }
 
 /* Add styling for the menu items */
@@ -411,7 +413,7 @@ navbar.fade-out {
 }
 
 .side-menu li {
-  padding-bottom: 25%;
+  padding-bottom: 15%;
 }
 
 .side-menu a {
@@ -430,7 +432,7 @@ navbar.fade-out {
 /*CASE STUDY FORMAT*/
 .page-container {
   flex: 1;
-  margin: clamp(16px, 8vw, 80px);
+  margin-left: 5%;
   padding-top: clamp(24px, 5vh, 48px);
   padding-bottom: clamp(40px, 10vh, 72px);
   z-index: 200;
@@ -940,6 +942,10 @@ section {
   }
 
   /*case studies*/
+  .wrapper {
+    margin: 0;
+  }
+
   .side-menu {
     display: none;
   }
@@ -1051,6 +1057,10 @@ section {
   }
 
   /*case studies*/
+  .wrapper {
+    margin: 0;
+  }
+
   .page-container {
     margin: 24px;
     padding-top: 24px;
@@ -1068,7 +1078,7 @@ section {
 }
 
 /*TABLET*/
-@media (max-width: 1023px) and (min-width: 481px) {
+@media (max-width: 1024px) and (min-width: 481px) {
 
   img,
   iframe,
@@ -1134,6 +1144,14 @@ section {
   }
 
   /*case studies*/
+  .wrapper {
+    margin: 0;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
   .page-container {
     margin: 48px;
     padding-top: 24px;
@@ -1156,9 +1174,36 @@ section {
 }
 
 /*DESKTOP*/
-@media (max-width:1920px) and (min-width:1024px) {
+@media (max-width:1800px) and (min-width:1025px) {
   .flex-contact img {
     padding: 0% 30%;
+  }
+
+  .wrapper {
+    margin: 0 5%;
+  }
+
+  .next-case-study {
+    padding: 5% 5%;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  /*homepage*/
+  #monet-mobile {
+    display: none;
+  }
+}
+
+@media (max-width:1920px) and (min-width:1801px) {
+  .flex-contact img {
+    padding: 0% 30%;
+  }
+
+  .wrapper {
+    margin: 0 10%;
   }
 
   .hamburger-container {
@@ -1176,50 +1221,16 @@ section {
     display: none;
   }
 
+  .wrapper {
+    margin: 0 15%;
+  }
+
+  .next-case-study {
+    padding: 5% 15%;
+  }
+
   /*homepage*/
   #monet-mobile {
     display: none;
-  }
-
-  h1 {
-    font-size: 80px;
-  }
-
-  h2 {
-    font-size: 60px;
-  }
-
-  h3 {
-    font-size: 48px;
-  }
-
-  h4 {
-    font-size: 30px;
-  }
-
-  p,
-  li,
-  a {
-    font-size: 24px;
-  }
-
-  small {
-    font-size: 16px;
-  }
-
-  navbar nav ul li a {
-    font-size: 30px;
-  }
-
-  navbar nav ul li ul li a {
-    font-size: 24px;
-  }
-
-  .side-menu a {
-    font-size: 16px;
-  }
-
-  .flex-contact img {
-    padding: 0% 30%;
   }
 }
